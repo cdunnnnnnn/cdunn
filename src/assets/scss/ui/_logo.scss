@@ -1,0 +1,92 @@
+.logo {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  backface-visibility: hidden;
+  opacity: .85;
+}
+
+.logo > a {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.logo-sm > a {
+  width: rem(48px);
+  height: rem(48px);
+  margin-right: rem(12px);
+  margin-bottom: rem(12px);
+  //@include transition(all, .25s, ease-in-out);
+}
+
+.logo-lg > a {
+  width: rem(80px);
+  height: rem(80px);
+}
+
+.logo > small {
+  padding-top: rem(12px);
+}
+
+.logo.hovered {
+  opacity: 1;
+}
+
+.logo .clip {
+  position: absolute;
+  display: block;
+  background-color: $black;
+  border-radius: 50%;
+  @include box-shadow;
+  transform: scale(0);
+}
+
+.logo-lg .clip {
+  width: rem(80px);
+  height: rem(80px);
+}
+
+.cdunn {
+  position: relative;
+  width: 100%;
+  height: auto;
+  @include transition(all, .25s, ease-in-out);
+}
+
+.cdunn-path {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  //@include transition(all, .25s, ease-in-out);
+}
+
+.logo .animate .clip {
+  @include animation('easeInElastic .35s forwards');
+}
+
+.logo .animate .cdunn {
+  @include animation('easeOutElasticVisible .5s forwards');
+}
+
+.logo .animate:focus span,
+.logo .animate:hover span {
+  @include animation('easeOutElastic .5s forwards');
+}
+
+.logo .animate:focus .cdunn,
+.logo .animate:hover .cdunn {
+  @include animation('easeInElasticVisible .35s forwards');
+}
+
+.logo > a:focus .cdunn-path,
+.logo > a:hover .cdunn-path {
+  fill: $white;
+}
+
+.logo-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: rem(4px);
+}

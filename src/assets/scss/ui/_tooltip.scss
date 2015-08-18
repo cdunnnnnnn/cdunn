@@ -1,0 +1,63 @@
+//------------------------------------//
+//  $TOOLTIP
+//------------------------------------//
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+  cursor: zoom-in;
+}
+
+.tooltip-bubble {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: lighten($white, 10%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+  border: 6px solid lighten($white, 10%);
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+  margin-left: -75px;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(.85);
+  @include transition(all, .2s, ease-in-out);
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0,0,0,.1);
+    margin-left: -7px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid lighten($white, 10%);
+    margin-left: -10px;
+  }
+}
+
+.tooltip:hover .tooltip-bubble,
+.tooltip:focus .tooltip-bubble {
+  bottom: 40px;
+  opacity: 1;
+  transform: scale(1);
+}

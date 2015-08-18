@@ -1,0 +1,85 @@
+//------------------------------------//
+//  $SOCIAL
+//------------------------------------//
+
+.social {
+  display: inline-block;
+  vertical-align: middle;
+  li {
+    position: relative;
+    display: inline-block;
+    width: rem(48px);
+    height: rem(48px);
+    border-radius: 50%;
+    margin: 0 rem(4px);
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+  }
+  li a {
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 50%;
+    border-width: rem(4px);
+    border-style: solid;
+    border-color: transparent;
+    @extend %filler;
+    @include transition(all, .2s, ease-in-out);
+  }
+  li a strong {
+    @include centerer(absolute);
+  }
+}
+
+.github {
+  a:hover {
+    //background-color: lighten($github, 10%);
+    border-color: $github;
+  }
+}
+.twitter {
+  a:hover {
+    //background-color: lighten($twitter, 10%);
+    border-color: $twitter;
+  }
+  svg path {
+    fill: $twitter;
+  }
+}
+.codepen {
+  a:hover {
+    //background-color: lighten($codepen, 10%);
+    border-color: $codepen;
+  }
+}
+/*
+.social .instagram {
+  a:hover {
+    background-color: lighten($instagram, 10%);
+    border-color: $instagram;
+  }
+}
+*/
+.spotify {
+  a:hover {
+    //background-color: lighten($spotify, 10%);
+    border-color: $spotify;
+  }
+  svg path {
+    fill: $spotify;
+  }
+}
+.email {
+  a:hover {
+    //background-color: $gray-dark-2;
+    border-color: $gray-dark-3;
+  }
+  svg path {
+    fill: $gray-dark-2;
+  }
+}
+
+/*
+.social a:hover .icn svg path {
+  fill: $white;
+}
+*/

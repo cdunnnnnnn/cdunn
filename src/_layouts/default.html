@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body class="{% body_class %}">
+
+    {% include sidebar.html %}
+
+    <div class="wrap">
+
+      <header class="masthead" data-js="full-screen"{% if page.title == 'Home' %} style="margin-bottom:0"{% endif %}{% if page.is_post %}  style="background-image:url({{ page.image }});"{% endif %}>
+        <div class="masthead-overlay" data-js="gradient-overlay"></div>
+        <div class="container">
+          <h1 class="masthead-title">
+            <div class="logo logo-lg">
+              <a href="/" data-js="logo" title="Home">
+                <span class="clip"></span>
+                {% include cdunn.html %}
+              </a>
+            </div>
+            <div class="logo-text">
+              {% if page.title == 'Home' %}Christopher Dunn{% else %}{{ page.title }}{% endif %}
+              <small>{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ page.excerpt }}{% endif %}</small>
+            </div>
+          </h1>
+        </div>
+      </header>
+
+      <div class="{% if page.title != 'Home' %}container {% endif %}content">
+        {{ content }}
+        <hr>
+      </div>
+
+      {% if page.location %}
+      <section class="location" data-js="location">
+        <div class="container">
+          <div class="location-state" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            {% include wi.html %}
+            <div class="location-pin" data-js="pin" title="Milwaukee, WI">
+              <span itemprop="addressLocality">Milwaukee,</span>&nbsp;<span itemprop="addressRegion">WI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% endif %}
+
+      <footer class="footer footer-lg">
+        <div class="container">
+          <div class="logo logo-sm">
+            <a href="/" title="Home">
+              {% include cdunn.html %}
+            </a>
+          </div>
+          <ul class="social">
+            <li class="github"><a href="https://github.com/pxdunn" title="GitHub" target="_blank"><strong class="icn icn-lgt icn-sz-sm">{% include _icons/github.html %}</strong></a></li>
+            <li class="twitter"><a href="https://twitter.com/pxdunn" title="Twitter" target="_blank"><strong class="icn icn-sz-sm">{% include _icons/twitter.html %}</strong></a></li>
+            <li class="codepen"><a href="http://codepen.io/pxdunn/" title="Codepen" target="_blank"><strong class="icn icn-lgt icn-sz-sm">{% include _icons/codepen.html %}</strong></a></li>
+            <li class="spotify"><a href="http://open.spotify.com/user/pxdunn" title="Spotify" target="_blank"><strong class="icn icn-sz-sm">{% include _icons/spotify.html %}</strong></a></li>
+          </ul>
+          <ul class="inline-list" style="margin-bottom:0;">
+            <li><a class="{% if page.title == 'Home' %} active{% endif %}" href="/">Home</a></li>
+            <li><a class="{% if page.title == 'About' %}active{% endif %}" href="/about">About</a></li>
+            <!--<li><a class="{% if page.title == 'Stuff' %}active{% endif %}" href="/stuff">Stuff</a></li>-->
+          </ul>
+          <br>
+          <span>coded with <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">markdown</a>, <a href="http://www.w3.org/TR/html5/" target="_blank">html5</a>, <a href="http://sass-lang.com/" target="_blank">sass</a> and vanilla <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">js</a></span>
+          <span>built with <a href="http://gulpjs.com/" target="_blank">gulp.js</a></span>
+          <span>published with <a href="http://jekyllrb.com/" target="_blank">jekyll</a></span>
+          <span>copyright &copy; {{ site.time | date: '%Y' }} <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x68;&#x65;&#x6c;&#108;&#x6f;&#64;&#x63;&#x64;&#117;&#110;&#x6e;&#46;&#x69;&#111;&#63;&#115;&#x75;&#98;&#x6a;&#x65;&#x63;&#x74;&#61;&#x69;&#x6e;&#113;&#x75;&#x69;&#114;&#121;&#32;&#102;&#114;&#x6f;&#x6d;&#32;&#x63;&#100;&#x75;&#110;&#110;&#x2e;&#105;&#x6f;">cdunn</a></span>
+        </div>
+      </footer>
+
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle" data-js="sidebar-toggle"><span></span></label>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

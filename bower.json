@@ -1,0 +1,7 @@
+{
+  "name": "cdunn",
+  "version": "0.0.1",
+  "dependencies": {
+    "vibrant": "^1.0.0"
+  }
+}

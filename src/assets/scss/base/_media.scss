@@ -1,0 +1,39 @@
+//------------------------------------//
+//  $MEDIA
+//------------------------------------//
+
+//  Google Maps
+.map {
+  position: relative;
+  width: 100%;
+  height: rem(200px);
+  border-radius: rem(4px);
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    color: $white;
+    text-align: center;
+    background-color: $black;
+    padding: rem(4px);
+    z-index: 999;
+  }
+}
+
+/*
+div[data-js="map-home"]:before {
+  content: "West Town - Milwaukee, WI";
+}
+*/
+
+// Twitter
+iframe[id*="twitter-widget"] {
+  margin: rem(36px) auto !important;
+}
+
+// Airbnb
+iframe[class*="embedly-card"] {
+  width: 100% !important;
+}

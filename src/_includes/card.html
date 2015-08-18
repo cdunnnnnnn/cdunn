@@ -1,0 +1,20 @@
+<div class="card">
+  {% if include.src %}
+  {% if include.href %}<a href="{{ include.href }}" target="_blank">{% endif %}
+    <img class="card-img" src="{{ include.src }}" alt="{{ include.title }}">
+  {% if include.href %}</a>{% endif %}
+  {% endif %}
+  {% if include.header %}
+  <div class="card-header" style="color:{{ include.color }};background-color:#{{ page.color }}">
+    {% if include.href %}<a href="{{ include.href }}" target="_blank" style="color:{{ include.color }};">{% endif %}
+    {{ include.header }}
+    {% if include.href %}</a>{% endif %}
+  </div>
+  {% endif %}
+  <div class="card-main">
+    {% if include.title %}
+    <h4>{{ include.title }}</h4>
+    {% endif %}
+    <p>{{ include.main }}</p>
+  </div>
+</div>

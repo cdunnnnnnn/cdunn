@@ -1,0 +1,12 @@
+//------------------------------------//
+//  $ICON BLOCK
+//------------------------------------//
+
+.icn-blc {
+  padding: rem(32px);
+}
+
+.icn-blc-img {
+  display: block;
+  @include centerer(absolute);
+}

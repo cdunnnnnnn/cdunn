@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://cdunn.io/</loc>
+    <lastmod>2015-08-09T18:02:24-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+    <url>
+      <loc>http://cdunn.io/work/2015/08/05/modern-healthcare/</loc>
+      
+        <lastmod>2015-08-05T00:00:00-05:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://cdunn.io/blog/2015/08/01/my-build-system/</loc>
+      
+        <lastmod>2015-08-01T00:00:00-05:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+  
+  <url>
+    <loc>http://cdunn.io/404/</loc>
+    
+      <lastmod>2015-08-09T18:02:24-05:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://cdunn.io/about/</loc>
+    
+      <lastmod>2015-08-09T18:02:24-05:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://cdunn.io/atom.xml</loc>
+    
+      <lastmod>2015-08-09T18:02:24-05:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://cdunn.io/stuff/</loc>
+    
+      <lastmod>2015-08-09T18:02:24-05:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://cdunn.io/</loc>
+    
+      <lastmod>2015-08-09T18:02:24-05:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://cdunn.io/sitemap.xml</loc>
+    
+      <lastmod>2015-08-09T18:02:24-05:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+</urlset>

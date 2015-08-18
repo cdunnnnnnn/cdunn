@@ -1,0 +1,56 @@
+# Title, decription, tagline and URL for your site
+# Can be used in your theme by calling 'site.title' and so on
+title: Christopher Dunn
+description: ui designer & developer
+tagline: Work/notes about building internet on the front end
+url: http://cdunn.io
+
+# Used so Jekyll outputs the site correctly so Gulp can do what it wants
+source: src
+destination: serve
+# include: ['.htaccess']
+
+# Same as the title etc for your site but can instead be
+# called by using 'site.author.name' and so on
+author:
+  name: Christopher Dunn
+  email: hello@cdunn.io
+  bio: I build internet.
+  twitter: pxdunn
+
+# general setting for Jekyll
+googleAnalytics: UA-50747921-1
+
+# _config.build.yml overwrites these options when you run `gulp build`
+# Enables future posts (posts with dates in the future) and drafts
+future: false
+show_drafts: false
+# Disables the more accurate related posts for faster generating of the site
+lsi: false
+# Only make the last 3 posts so generating isn't slow
+limit_posts: 3
+
+# Permalink structure and pagination options
+relative_permalinks: true
+permalink: pretty
+paginate: 12
+paginate_path: '/page/:num'
+excerpt_separator: '<!--more-->'
+
+# Markdown library
+markdown: redcarpet
+# Markdown library options
+redcarpet:
+  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
+              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes', 'with_toc_data']
+pygment: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: "@pxdunn"
+      is_post: true

@@ -1,0 +1,112 @@
+//------------------------------------//
+//  $ICONS
+//------------------------------------//
+
+.icn {
+  display: inline-block;
+  vertical-align: middle;
+  @include transition(opacity, .2s, ease-in-out);
+}
+
+.icn svg {
+  display: block;
+  @extend %filler;
+}
+
+.icn svg > * {
+  @include transition(all, .2s, ease-in-out);
+}
+
+.icn em {
+  font-size: rem(14px);
+  line-height: 1.5;
+}
+
+.icn-lgt svg > * {
+  fill: $white;
+}
+
+.icn-lgt-drk {
+  fill: $gray-light-2;
+}
+
+.icn-drk-lgt {
+  fill: $gray-dark-1;
+}
+
+.icn-drk svg path {
+  fill: $gray-dark-3;
+}
+
+.icn-sz-xxxl {
+  width: rem(120px);
+  height: rem(120px);
+  @include  bp-md {
+    width: rem(156px);
+    height: rem(156px);
+    border-width: rem(6px);
+  }
+}
+
+.icn-sz-xxl {
+  width: rem(120px);
+  height: rem(120px);
+}
+
+.icn-sz-xl {
+  width: rem(72px);
+  height: rem(72px);
+}
+
+.icn-sz-lg {
+  width: rem(56px);
+  height: rem(56px);
+}
+
+.icn-sz-md {
+  width: rem(48px);
+  height: rem(48px);
+}
+
+.icn-sz-sm {
+  width: rem(32px);
+  height: rem(32px);
+}
+
+.icn-sz-xs {
+  width: rem(24px);
+  height: rem(24px);
+}
+
+.icn-sz-xxs {
+  width: rem(16px);
+  height: rem(16px);
+}
+
+.icn-flg {
+  width: rem(64px);
+  background-color: $white;
+  /*
+  @include bp-sm {
+    width: rem(84px);
+  }
+  @include bp-md {
+    width: rem(96px);
+  }
+  */
+}
+
+.icn-logo {
+  display: block;
+  width: 100%;
+  height: rem(48px);
+  margin-top: rem(16px);
+}
+
+.icn-heart {
+  color: $quinary;
+  animation: heartbeat 1.85s linear infinite;
+  svg path {
+    fill: $quinary;
+  }
+}

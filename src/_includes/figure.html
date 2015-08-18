@@ -1,0 +1,19 @@
+<figure class="fig{% if include.align == 'right' %} fig-rgt{% else %} fig-lft{% endif %}{% if include.size == 'small' %} fig-sm{% else %} fig-lg{% endif %}">
+	<img class="fig-img" src="{{ include.src }}" alt="{{ include.alt }}" title="{{ include.alt }}">
+	{% if include.social == 'true' %}
+	<div class="social fig-social">
+		<ul>
+			<li class="github"><a href="https://github.com/pxdunn" title="GitHub" target="_blank"><span class="icn icn-lgt icn-sz-sm">{% include _icons/github.html %}</span></a></li>
+			<li class="codepen"><a href="http://codepen.io/pxdunn/" title="Codepen" target="_blank"><span class="icn icn-lgt icn-sz-sm">{% include _icons/codepen.html %}</span></a></li>
+			<li class="twitter"><a href="https://twitter.com/pxdunn" title="Twitter" target="_blank"><span class="icn icn-lgt icn-sz-sm">{% include _icons/twitter.html %}</span></a></li>
+			<li class="spotify"><a href="http://open.spotify.com/user/pxdunn" title="Spotify" target="_blank"><span class="icn icn-lgt icn-sz-sm">{% include _icons/spotify.html %}</span></a></li>
+			<li class="email"><a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x68;&#x65;&#x6c;&#108;&#x6f;&#64;&#x63;&#x64;&#117;&#110;&#x6e;&#46;&#x69;&#111;&#63;&#115;&#x75;&#98;&#x6a;&#x65;&#x63;&#x74;&#61;&#x69;&#x6e;&#113;&#x75;&#x69;&#114;&#121;&#32;&#102;&#114;&#x6f;&#x6d;&#32;&#x63;&#100;&#x75;&#110;&#110;&#x2e;&#105;&#x6f;" title="Email"><span class="icn icn-lgt icn-sz-sm">{% include cdunn.html %}</span></a></li>
+		</ul>
+	</div>
+	{% endif %}
+	{% if caption %}
+  <figcaption class="fig-caption">
+      {{ include.caption }}
+  </figcaption>
+	{% endif %}
+</figure>

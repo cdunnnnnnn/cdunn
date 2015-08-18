@@ -1,0 +1,46 @@
+---
+layout: default
+location: true
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <span itemprop="headline" hidden>{{ page.title }} - {{ page.excerpt }}</span>
+  <span itemprop="image" hidden>{{ site.url }}{{ page.image }}</span>
+  <div class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <a href="/about">
+      <img src="/assets/img/cdunn.jpg" alt="{{ site.title }}">
+    </a>
+    by <a class="hvr-rgt" href="https://twitter.com/{{ page.author }}" target="_blank" itemprop="name">{{ page.author }}</a>
+  </div>
+  <div class="post-date">
+    <i class="icn icn-drk-lgt icn-sz-xxs">{% include _icons/calendar.html %}</i>
+    <span itemprop="datePublished">&nbsp;{{ page.date | date: '%b %d, %Y' }}</span>
+  </div>
+  <span class="post-tags"><i class="icn icn-drk-lgt icn-sz-xxs">{% include _icons/tag.html %}</i>&nbsp;&nbsp;{{ page.categories }}</span>
+  {% include share.html %}
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
+  <div class="cf"></div>
+</article>
+
+<!--
+<div class="related">
+  <h3>More Posts</h3>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h2>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <span class="post-date">
+              {{ page.date | date: '%b' }}
+              <small>{{ page.date | date: '%d' }}</small>
+            </span>
+          </a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+-->

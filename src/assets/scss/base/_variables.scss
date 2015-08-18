@@ -1,0 +1,107 @@
+//------------------------------------//
+//  $VARIABLES
+//------------------------------------//
+
+// Colors
+$white: #fafafa;
+$black: #2c2e31;
+
+$gray-dark-1: lighten($black, 30%);
+$gray-dark-2: lighten($black, 20%);
+$gray-dark-3: lighten($black, 10%);
+
+$gray-light-1: darken($white, 5%);
+$gray-light-2: darken($white, 10%);
+$gray-light-3: darken($white, 15%);
+$gray-light-4: darken($white, 20%);
+$gray-light-5: darken($white, 25%);
+
+$primary: #00b1d4; // blue
+$secondary: #4ac883; // green
+$tertiary: #efd45c; // yellow
+$quaternary: #eb904c; // orange
+$quinary: #e74c3c; // red
+$senary: #9b59b6; // violet
+// octonary, nonary, denary
+
+$facebook: #3b5998;
+$twitter: #55acee;
+$linkedin: #0077b5;
+$googleplus: #cc3732;
+$pinterest: #cc2127;
+$instagram: #3f729b;
+$vine: #00b489;
+$github: #171515;
+$codepen: #000;
+$dribbble: #ea4c89;
+$instagram: #3f729b;
+$spotify: #32cd64;
+
+$pre: $black;
+$code: $black;
+$syntax: $gray-light-3;
+$hll: $gray-dark-3;
+$c: $gray-dark-2;
+$err: $quinary;
+$k: $gray-dark-1;
+$o: $gray-dark-1;
+$cm: $gray-dark-2;
+$cp: $gray-dark-1;
+$c1: $gray-dark-2;
+$cs: $gray-dark-2;
+$gd: $quinary;
+$gr: $quinary;
+$gh: $gray-dark-2;
+$gi: $secondary;
+$go: $gray-dark-1;
+$gp: $primary;
+$gu: $gray-dark-3;
+$gt: $primary;
+$kc: $quaternary;
+$kd: $senary;
+$kn: $gray-dark-1;
+$kp: $gray-dark-1;
+$kr: $gray-dark-1;
+$kt: $quaternary;
+$m: $quaternary;
+$s: $secondary;
+$na: $quaternary;
+$nb: $tertiary;
+$nc: $quaternary;
+$no: $primary;
+$nd: $primary;
+$ni: $primary;
+$ne: $primary;
+$nf: $primary;
+$nl: $primary;
+$nn: $primary;
+$nt: $gray-dark-1;
+$nv: $gray-dark-3;
+$ow: $gray-dark-3;
+$w: $gray-dark-1;
+$mf: $quaternary;
+$mh: $quaternary;
+$mi: $quaternary;
+$mo: $quaternary;
+$sb: $secondary;
+$sc: $secondary;
+$sd: $secondary;
+$s2: $secondary;
+$se: $secondary;
+$sh: $secondary;
+$si: $primary;
+$sx: $primary;
+$sr: $primary;
+$s1: $secondary;
+$ss: $tertiary;
+$bp: $gray-dark-3;
+$vc: $gray-dark-3;
+$vg: $gray-dark-3;
+$vi: $gray-dark-3;
+$il: $quaternary;
+$css: $gray-dark-2;
+
+// Fonts
+$primary-font: "Open Sans", Helvetica, Arial, sans-serif;
+$secondary-font:  $primary-font;
+$tertiary-font: monaco, Consolas, "Lucida Console", monospace;

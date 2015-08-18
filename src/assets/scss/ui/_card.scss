@@ -1,0 +1,42 @@
+//------------------------------------//
+//  $CARD
+//------------------------------------//
+
+$card-background: #fff;
+$card-border: $gray-light-2;
+$card-radius: rem(5px);
+$card-shadow: 0 rem(2px) rem(4px) $gray-light-1;
+
+.card {
+  width: 100%;
+  background-color: $card-background;
+  border: 1px solid $card-border;
+  border-radius: $card-radius;
+  box-shadow: $card-shadow;
+  padding: 0;
+  margin: rem(16px) auto;
+  @include bp-sm {
+    max-width: rem(300px);
+  }
+}
+
+.card-img {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-bottom: 0;
+}
+
+.card-header {
+  color: $white;
+  padding: rem(16px);
+}
+
+.card-main {
+  padding: rem(16px);
+  h4, h5, h5 {
+    margin-top: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}

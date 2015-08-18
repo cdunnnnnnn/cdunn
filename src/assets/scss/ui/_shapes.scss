@@ -1,0 +1,45 @@
+//------------------------------------//
+//  $SHAPES
+//------------------------------------//
+
+.shp {
+  display: block;
+}
+
+// triangles
+.shp-tri {
+  width: 0;
+  height: 0;
+}
+
+.shp-tri-dwn {
+  @include h-centerer(absolute, auto, rem(18px));
+  @include triangle-down(rem(12px), rem(12px), rem(10px), $gray-dark-3);
+}
+
+// caret
+.shp-crt {
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+  }
+}
+
+.shp-crt-xm {
+  &:before {
+    top: 0;
+    left: 0;
+    border-top: 12px solid $gray-dark-3;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+  }
+  &:after {
+    top: 0;
+    left: 6px;
+    border-top: 6px solid $white;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+  }
+}

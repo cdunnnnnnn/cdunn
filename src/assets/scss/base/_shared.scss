@@ -1,0 +1,163 @@
+//------------------------------------//
+//  $SHARED
+//------------------------------------//
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $primary-font;
+  font-size: rem(16px);
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: $white;
+  @include bp-md {
+    font-size: rem(20px);
+  }
+  &.active {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+body {
+  color: $gray-dark-3;
+  background-color: $white;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  opacity: 0;
+}
+
+/* No `:visited` state is required by default (browsers will use `a`) */
+
+a {
+  color: $gray-dark-3;
+  text-decoration: none;
+  &:hover, &:focus, &.active {
+    text-decoration: underline;
+  }
+}
+
+body {
+  &.color-primary {
+    .content a,
+    a:hover, a:focus,
+    .tooltip {
+      color: $primary;
+    }
+    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+      fill: $primary;
+    }
+  }
+  &.color-secondary {
+    .content a,
+    a:hover, a:focus,
+    .tooltip {
+      color: $secondary;
+    }
+    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+      fill: $secondary;
+    }
+  }
+  &.color-tertiary {
+    .content a,
+    a:hover, a:focus,
+    .tooltip {
+      color: $tertiary;
+    }
+    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+      fill: $tertiary;
+    }
+  }
+  &.color-quaternary {
+    .content a,
+    a:hover, a:focus,
+    .tooltip {
+      color: $quaternary;
+    }
+    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+      fill: $quaternary;
+    }
+  }
+  &.color-quinary {
+    .content a,
+    a:hover, a:focus,
+    .tooltip {
+      color: $quinary;
+    }
+    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+      fill: $quinary;
+    }
+  }
+  &.color-senary {
+    .content a,
+    a:hover, a:focus,
+    .tooltip {
+      color: $senary;
+    }
+    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+      fill: $senary;
+    }
+  }
+}
+
+.hvr-rgt {
+  position: relative;
+  left: 0;
+  @include transition(all, .25s, ease-in-out);
+  &:hover, &:focus {
+    left: 6px;
+  }
+}
+
+.cf {
+  @include clearfix;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.container {
+  max-width: 28rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  @include bp-sm {
+    max-width: rem(568px);
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.cntr {
+  @include centerer(absolute);
+}
+
+.lft {
+  @include bp-sm {
+    @include v-centerer(absolute, auto, rem(16px));
+  }
+}
+
+.rgt {
+  @include bp-sm {
+    @include v-centerer(absolute, rem(16px), auto);
+  }
+}

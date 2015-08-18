@@ -1,0 +1,19 @@
+//------------------------------------//
+//  $GRID
+//------------------------------------//
+
+@include bp-md {
+  .row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .col {
+    display: table-cell;
+  }
+}
+
+.col-cntr {
+  text-align: center;
+  vertical-align: middle;
+}

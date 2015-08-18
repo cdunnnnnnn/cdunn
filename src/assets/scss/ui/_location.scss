@@ -1,0 +1,67 @@
+//------------------------------------//
+//  $LOCATION
+//------------------------------------//
+
+.location {
+  padding: rem(64px);
+}
+
+.location-wrapper {
+  position: relative;
+}
+
+.location-state {
+  display: block;
+  width: rem(136px);
+  height: auto;
+  margin: 0 auto;
+  transform: rotateZ(-18deg);
+  @include bp-sm {
+    width: rem(196px);
+  }
+  @include bp-md {
+    width: rem(256px);
+  }
+  @include bp-lg {
+    width: rem(316px);
+  }
+  @include bp-xl {
+    width: rem(376px);
+  }
+}
+
+.location-state svg {
+  opacity: .125;
+}
+
+.location-pin {
+  position: absolute;
+  right: 16%;
+  bottom: 17.5%;
+  display: inline-block;
+  width: rem(18px);
+  height: rem(18px);
+  text-indent: -9999px;
+  overflow: hidden;
+  background-color: rgba(0,0,0, .125);
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 50%;
+  animation: marker 2s infinite;
+  @include bp-sm {
+    right: 17%;
+    bottom: 18.5%;
+  }
+  @include bp-md {
+    right: 18%;
+    bottom: 19.5%;
+  }
+  @include bp-lg {
+    right: 19%;
+    bottom: 20.5%;
+  }
+  @include bp-xl {
+    right: 20%;
+    bottom: 21.5%;
+  }
+}

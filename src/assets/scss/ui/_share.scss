@@ -1,0 +1,57 @@
+//------------------------------------//
+//  $SHARE
+//------------------------------------//
+
+.share {
+  overflow: auto;
+  margin: rem(16px) 0 rem(24px);
+  li {
+    position: relative;
+    float: left;
+    a {
+      display: block;
+      border-radius: rem(3px);
+      padding: rem(3px) rem(4px);
+      @include transition(all, .25s, ease-in-out);
+      svg path {
+        fill: $white;
+      }
+    }
+    &:first-child {
+      border-top-left-radius: rem(3px);
+      border-bottom-left-radius: rem(3px);
+    }
+    &:last-child {
+      border-top-right-radius: rem(3px);
+      border-bottom-right-radius: rem(3px);
+    }
+  }
+  .twitter {
+    background-color: $twitter;
+    a:focus,
+    a:hover {
+      background-color: lighten($twitter, 5%);
+    }
+  }
+  .facebook {
+    background-color: $facebook;
+    a:focus,
+    a:hover {
+      background-color: lighten($facebook, 5%);
+    }
+  }
+  .linkedin {
+    background-color: $linkedin;
+    a:focus,
+    a:hover {
+      background-color: lighten($linkedin, 5%);
+    }
+  }
+  .googleplus {
+    background-color: $googleplus;
+    a:focus,
+    a:hover {
+      background-color: lighten($googleplus, 5%);
+    }
+  }
+}
