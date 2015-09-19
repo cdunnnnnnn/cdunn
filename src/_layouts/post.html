@@ -10,37 +10,21 @@ location: true
     <a href="/about">
       <img src="/assets/img/cdunn.jpg" alt="{{ site.title }}">
     </a>
-    by <a class="hvr-rgt" href="https://twitter.com/{{ page.author }}" target="_blank" itemprop="name">{{ page.author }}</a>
+    by <a href="https://twitter.com/{{ page.author }}" target="_blank" itemprop="name">{{ page.author }}</a>
   </div>
   <div class="post-date">
     <i class="icn icn-drk-lgt icn-sz-xxs">{% include _icons/calendar.html %}</i>
-    <span itemprop="datePublished">&nbsp;{{ page.date | date: '%b %d, %Y' }}</span>
+    <span itemprop="datePublished">{{ page.date | date: '%b %d, %Y' }}&nbsp;&nbsp;</span>
   </div>
-  <span class="post-tags"><i class="icn icn-drk-lgt icn-sz-xxs">{% include _icons/tag.html %}</i>&nbsp;&nbsp;{{ page.categories }}</span>
+  <span class="post-tags"><i class="icn icn-drk-lgt icn-sz-xxs">{% include _icons/tag.html %}</i>&nbsp;{{ page.categories }}&nbsp;&nbsp;</span>
+  <span class="post-comments"><i class="icn icn-drk-lgt icn-sz-xxs">{% include _icons/comment.html %}</i><a href="#comments" data-disqus-identifier="{{ page.url }}"></a></span>
   {% include share.html %}
   <div itemprop="articleBody">
     {{ content }}
   </div>
   <div class="cf"></div>
+  <h4 id="comments">Comments</h4>
+  <div id="disqus_thread"></div>
+  <script>var disqus_identifier = '{{ page.url }}';var disqus_shortname = 'cdunnio';(function(){var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </article>
-
-<!--
-<div class="related">
-  <h3>More Posts</h3>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h2>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <span class="post-date">
-              {{ page.date | date: '%b' }}
-              <small>{{ page.date | date: '%d' }}</small>
-            </span>
-          </a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
--->

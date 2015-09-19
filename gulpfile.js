@@ -74,6 +74,13 @@ gulp.task("fonts", function () {
     .pipe($.size({ title: "fonts" }));
 });
 
+// Copy over videos to the "site" directory
+gulp.task("videos", function () {
+  return gulp.src("src/assets/videos/**")
+    .pipe(gulp.dest("site/assets/videos"))
+    .pipe($.size({ title: "videos" }));
+});
+
 // Copy xml and txt files to the "site" directory
 gulp.task("copy", function () {
   return gulp.src(["serve/*.txt", "serve/*.xml"])
@@ -180,5 +187,5 @@ gulp.task("build", ["jekyll:prod", "styles"], function () {});
 // Builds your site with the "build" command and then runs all the optimizations on
 // it and outputs it to "./site"
 gulp.task("publish", ["build"], function () {
-  gulp.start("html", "copy", "images", "fonts");
+  gulp.start("html", "copy", "images", "fonts", "videos");
 });

@@ -141,6 +141,7 @@ code {
 }
 
 pre {
+  position: relative;
   display: block;
   color: $syntax;
   font-size: rem(14px);
@@ -150,6 +151,8 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   background-color: $pre;
+  //border-bottom-right-radius: rem(4px);
+  //border-bottom-left-radius: rem(4px);
   border-radius: rem(4px);
   padding: rem(16px);
   margin-top: 0;
@@ -159,6 +162,30 @@ pre {
     font-size: 100%;
     color: inherit;
     background-color: transparent;
+    /*
+    &:before {
+      position: absolute;
+      top: rem(-32px);
+      left: 0;
+      display: block;
+      width: 100%;
+      color: $white;
+      text-transform: uppercase;
+      background-color: $black;
+      border-top-right-radius: rem(4px);
+      border-top-left-radius: rem(4px);
+      padding: rem(16px);
+    }
+    &[class*="markup"]:before {
+      content: "html";
+    }
+    &[class*="css"]:before {
+      content: "css";
+    }
+    &[class*="javascript"]:before {
+      content: "js";
+    }
+    */
   }
 }
 

@@ -67,12 +67,12 @@
 }
 
 .logo .animate .cdunn {
-  @include animation('easeOutElasticVisible .5s forwards');
+  @include animation('easeOutElasticVisible .35s forwards');
 }
 
 .logo .animate:focus span,
 .logo .animate:hover span {
-  @include animation('easeOutElastic .5s forwards');
+  @include animation('easeOutElastic .35s forwards');
 }
 
 .logo .animate:focus .cdunn,
@@ -88,5 +88,6 @@
 .logo-text {
   display: inline-block;
   vertical-align: middle;
+  opacity: .85;
   padding-left: rem(4px);
 }

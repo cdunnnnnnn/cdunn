@@ -50,75 +50,64 @@ a {
   }
 }
 
-body {
-  &.color-primary {
-    .content a,
-    a:hover, a:focus,
-    .tooltip {
-      color: $primary;
-    }
-    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
-      fill: $primary;
-    }
+.color-primary {
+  .content a,
+  a:hover, a:focus,
+  .tooltip {
+    color: $primary;
   }
-  &.color-secondary {
-    .content a,
-    a:hover, a:focus,
-    .tooltip {
-      color: $secondary;
-    }
-    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
-      fill: $secondary;
-    }
-  }
-  &.color-tertiary {
-    .content a,
-    a:hover, a:focus,
-    .tooltip {
-      color: $tertiary;
-    }
-    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
-      fill: $tertiary;
-    }
-  }
-  &.color-quaternary {
-    .content a,
-    a:hover, a:focus,
-    .tooltip {
-      color: $quaternary;
-    }
-    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
-      fill: $quaternary;
-    }
-  }
-  &.color-quinary {
-    .content a,
-    a:hover, a:focus,
-    .tooltip {
-      color: $quinary;
-    }
-    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
-      fill: $quinary;
-    }
-  }
-  &.color-senary {
-    .content a,
-    a:hover, a:focus,
-    .tooltip {
-      color: $senary;
-    }
-    .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
-      fill: $senary;
-    }
+  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+    fill: $primary;
   }
 }
-
-.hvr-rgt {
-  position: relative;
-  left: 0;
-  @include transition(all, .25s, ease-in-out);
-  &:hover, &:focus {
-    left: 6px;
+.color-secondary {
+  .content a,
+  a:hover, a:focus,
+  .tooltip {
+    color: $secondary;
+  }
+  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+    fill: $secondary;
+  }
+}
+.color-tertiary {
+  .content a,
+  a:hover, a:focus,
+  .tooltip {
+    color: $tertiary;
+  }
+  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+    fill: $tertiary;
+  }
+}
+.color-quaternary {
+  .content a,
+  a:hover, a:focus,
+  .tooltip {
+    color: $quaternary;
+  }
+  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+    fill: $quaternary;
+  }
+}
+.color-quinary {
+  .content a,
+  a:hover, a:focus,
+  .tooltip {
+    color: $quinary;
+  }
+  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+    fill: $quinary;
+  }
+}
+.color-senary {
+  .content a,
+  a:hover, a:focus,
+  .tooltip {
+    color: $senary;
+  }
+  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+    fill: $senary;
   }
 }
 
@@ -146,6 +135,14 @@ img {
   height: auto;
 }
 
+.emoji {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  margin: 4px 0 0;
+}
+
 .cntr {
   @include centerer(absolute);
 }
@@ -159,5 +156,12 @@ img {
 .rgt {
   @include bp-sm {
     @include v-centerer(absolute, rem(16px), auto);
+  }
+}
+
+.gt-mb {
+  display: none !important;
+  @include bp-sm {
+    display: inline-block !important;
   }
 }

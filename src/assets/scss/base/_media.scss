@@ -2,6 +2,7 @@
 //  $MEDIA
 //------------------------------------//
 
+/*
 //  Google Maps
 .map {
   position: relative;
@@ -21,12 +22,18 @@
     z-index: 999;
   }
 }
+*/
 
 /*
 div[data-js="map-home"]:before {
   content: "West Town - Milwaukee, WI";
 }
 */
+
+// Disqus
+div[id="disqus_thread"] {
+  //margin-top: rem(36px);
+}
 
 // Twitter
 iframe[id*="twitter-widget"] {

@@ -50,18 +50,18 @@
   animation: marker 2s infinite;
   @include bp-sm {
     right: 17%;
-    bottom: 18.5%;
+    bottom: 17.5%;
   }
   @include bp-md {
     right: 18%;
-    bottom: 19.5%;
+    bottom: 18.5%;
   }
   @include bp-lg {
     right: 19%;
-    bottom: 20.5%;
+    bottom: 19.5%;
   }
   @include bp-xl {
     right: 20%;
-    bottom: 21.5%;
+    bottom: 20.5%;
   }
 }

@@ -10,32 +10,23 @@ image: /assets/img/cdunn.jpg
   {% for post in paginator.posts %}
   <div class="post col" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="post-hero" href="{{ post.url }}"{% if post.logo %} style="background-color:#{{ post.color }}"{% else %} style="background-image:url({{ post.image }})"{% endif %}>
-      <!--
-      {% if post.color %}
-        <img src="http://placehold.it/120x60/{{ post.color }}/{{ post.color }}" alt="{{ post.title }}" title="{{ post.title }}">
-      {% else %}
-        <img src="{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}" itemprop="image">
-      {% endif %}
-      -->
       <div class="post-hero-inner">
-        <span itemprop="name" hidden>{{ page.author }}</span>
-        <span itemprop="datePublished" hidden>{{ post.date | date: '%b %d, %Y' }}</span>
+        <span itemprop="name" hidden>{{ site.author.name }}</span>
+        <span itemprop="headline" hidden>{{ post.title }}</span>
+        <span itemprop="image" hidden>{{ post.image }}</span>
         {% if post.logo %}
-          <span itemprop="headline" hidden>{{ post.title }}</span>
-          <span itemprop="image" hidden>{{ post.image }}</span>
           <a class="icn icn-lgt icn-logo" href="{{ post.externalUrl }}" target="_blank" style="width:{{ post.logoWidth }};height:{{ post.logoHeight}}">{% include {{ post.logo }} %}</a>
         {% else %}
           <h2 class="post-hero-title" itemprop="headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         {% endif %}
         <p class="post-hero-excerpt">{{ post.excerpt }}</p>
+        <i class="icn icn-lgt icn-sz-xxs gt-mb">{% include _icons/calendar.html %}</i>
+        <span class="post-hero-date gt-mb" itemprop="datePublished">{{ post.date | date: '%b %d, %Y' }}&nbsp;&nbsp;</span>
         {% if post.categories %}
-          <span class="post-hero-tags"><i class="icn icn-lgt icn-sz-xxs">{% include _icons/tag.html %}</i>&nbsp;{{ post.categories }}</span>
+          <span class="post-hero-tags"><i class="icn icn-lgt icn-sz-xxs">{% include _icons/tag.html %}</i>&nbsp;{{ post.categories }}</span>&nbsp;&nbsp;
         {% endif %}
-        {% if post.externalUrl %}
-          <a class="btn btn-stick-bttm btn-sz-md btn-radius" href="{{ post.externalUrl }}" target="_blank">Visit</a>
-        {% else %}
-          <a class="btn btn-stick-bttm btn-sz-md btn-radius" href="{{ post.url }}">More</a>
-        {% endif %}
+        <i class="icn icn-lgt icn-sz-xxs gt-mb">{% include _icons/comment.html %}</i><a class="post-hero-comments gt-mb" href="{{ post.url }}#comments" data-disqus-identifier="{{ post.url }}">&nbsp;Comments</a>
+        <a class="btn btn-stick-bttm btn-sz-md btn-radius" href="{{ post.url }}">More</a>
       </div>
     </div>
   </div>

@@ -54,3 +54,7 @@ defaults:
       layout: post
       author: "@pxdunn"
       is_post: true
+
+# Gems
+gems:
+  ['jemoji']

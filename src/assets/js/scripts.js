@@ -2,13 +2,13 @@
 
 var bgImgArry = [
   '/assets/img/bg-01.jpg',
-  '/assets/img/bg-02.jpg',
-  '/assets/img/bg-03.jpg',
-  '/assets/img/bg-04.jpg',
-  '/assets/img/bg-05.jpg',
-  '/assets/img/bg-06.jpg',
-  '/assets/img/bg-07.jpg',
-  '/assets/img/bg-08.jpg'
+  '/assets/img/bg-02.jpg'
+  //'/assets/img/bg-03.jpg',
+  //'/assets/img/bg-04.jpg',
+  //'/assets/img/bg-05.jpg',
+  //'/assets/img/bg-06.jpg',
+  //'/assets/img/bg-07.jpg',
+  //'/assets/img/bg-08.jpg'
 ];
 
 var colorsArray = [
@@ -40,7 +40,7 @@ var colorsArray = [
   { //violet
     light: '#9b59b6',
     dark: '#884ea0',
-    class: '9b59b6'
+    class: 'senary'
   }
 ];
 
@@ -64,7 +64,7 @@ function rgbToHex(r, g, b) {
 }
 */
 
-var post = document.body.className.match(/(\bcategories-notes\b|\bcategories-work\b)/g);
+var post = document.body.className.match(/(\bcategories-blog\b|\bcategories-work\b)/g);
 var randomNum = Math.floor(Math.random() * bgImgArry.length);
 var imgSrc = bgImgArry.splice(randomNum, 1);
 
@@ -132,7 +132,7 @@ else if (post) {
 
 var onScroll = function() {
   var element = document.querySelector('[data-js="sidebar-toggle"]');
-  var scrollBarPosition = window.pageYOffset | document.body.scrollTop;
+  var scrollBarPosition = window.pageYOffset || document.body.scrollTop;
   var screenHeight = window.innerHeight;
 
   if (scrollBarPosition >= screenHeight - 32) {
@@ -159,11 +159,11 @@ function navToggle(el) {
   });
 };
 
-function logoAnimate(el) {
+function logoAnimate(el, bg) {
   var element = document.querySelector(el);
-  var child = element.childNodes[1];
+  var sibling = document.querySelector(bg);
 
-  child.style.background = colorsArray[0].light;
+  sibling.style.background = colorsArray[0].light;
 
   element.addEventListener('mouseenter', function(e) {
     var parent = e.target.parentNode;
@@ -204,7 +204,7 @@ function shareUrlEncode(el) {
 function init() {
   fadeIn('body');
   navToggle('[data-js="sidebar-toggle"]');
-  logoAnimate('[data-js="logo"]');
+  logoAnimate('[data-js="logo"]', '[data-js="logo-clip"]');
   //shareUrlEncode('[data-js="share"]');
   locationColors('[data-js="location"]', '[data-js="pin"]');
   fitVids('[data-js="fitvid"]');
@@ -311,76 +311,12 @@ window.onresize = function() {
 	}
 }(window));
 
-/*
-// Google Maps
-var map;
-var latitude = 41.967086;
-var longitude = -87.656555;
-var chicago = new google.maps.LatLng(latitude, longitude);
-var cdunnMap = 'custom_style';
-function initialize() {
-  var mapOptions = {
-    zoom: 8,
-    center: chicago,
-    scrollwheel: false,
-    draggable: true,
-    zoomControl: false,
-    disableDoubleClickZoom: true,
-    disableDefaultUI: true,
-    mapTypeControlOptions: {
-      mapTypeId: [google.maps.MapTypeId.ROADMAP, cdunnMap]
-    },
-    mapTypeId: cdunnMap
-  };
-  var featureOpts = [
-    {
-      stylers: [
-        { visibility: 'simplified' },
-        { color: '#44474c' }
-      ]
-    },
-    {
-      featureType: 'water',
-      stylers: [
-        { color: '#00b1d4' }
-      ]
-    },
-    {
-      featureType: 'road',
-      elementType: 'geometry',
-      stylers: [
-        { visibility: 'on' },
-        { color: '#5c6067' }
-      ]
-    },
-    {
-      featureType: 'road',
-      elementType: 'labels',
-      stylers: [
-        { visibility: 'off' }
-      ]
-    },
-    {
-      featureType: 'administrative',
-      elementType: 'labels',
-      stylers: [
-        { color: '#eaeaea' }
-      ]
-    }
-  ];
-  map = new google.maps.Map(document.querySelector('[data-js="map-home"]'),
-      mapOptions);
-  var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(latitude, longitude),
-    map: map,
-    visible: true,
-    title: 'Serving the Chicagoland area'
-  });
-  var styledMapOptions = {
-    name: 'Custom Style'
-  };
-  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-  map.mapTypes.set(cdunnMap, customMapType);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-*/
+// Disqus
+var disqus_shortname = 'cdunnio';
+
+(function () {
+  var s = document.createElement('script'); s.async = true;
+  s.type = 'text/javascript';
+  s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());

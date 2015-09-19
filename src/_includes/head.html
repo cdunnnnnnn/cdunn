@@ -4,7 +4,7 @@
   <title>
     cdunn.io - {{ page.title }}
   </title>
-  <meta name="description" content="{% if page %}{{ page.subtitle }}{% else %}{{ page.excerpt }}{% endif %}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.subtitle }}{% endif %}">
   <meta name="robots" content="index, follow">
   <meta name="author" content="@pxdunn">
   <link rel="canonical" href="{{ site.url }}{% if page.url %}{{ page.url }}{% endif %}">
@@ -13,7 +13,7 @@
   <meta name="twitter:site" content="@pxdunn">
   <meta name="twitter:creator" content="@pxdunn">
   <meta name="twitter:title" content="cdunn.io - {{ page.title }}">
-  <meta name="twitter:description" content="{% if page %}{{ page.subtitle }}{% else %}{{ page.excerpt }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.subtitle }}{% endif %}">
   <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
   <meta name="twitter:domain" content="{{ site.url }}">
   <!-- Facebook / Open Graph -->
@@ -21,13 +21,12 @@
   <meta property="og:type" content="{% if page.is_post %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ site.url }}{% if page.url %}{{ page.url }}{% endif %}">
   <meta property="og:image" content="{{ site.url }}{{ page.image }}">
-  <meta property="og:description" content="{% if page %}{{ page.subtitle }}{% else %}{{ page.excerpt }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.subtitle }}{% endif %}">
   <meta property="og:site_name" content="cdunn.io">
   <!-- Google+ / Schema.org  -->
   <meta itemprop="name" content="cdunn.io - {{ page.title }}">
-  <meta itemprop="description" content="{% if page %}{{ page.subtitle }}{% else %}{{ page.excerpt }}{% endif %}">
+  <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.subtitle }}{% endif %}">
   <meta itemprop="image" content="{{ site.url }}{{ page.image }}">
-
   <!-- Icons -->
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -54,6 +53,5 @@
   <!-- build:css /assets/css/styles.min.css -->
   <link rel="stylesheet" href="/assets/css/styles.css">
   <!-- endbuild -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Work+Sans:400,800">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800">
 </head>
