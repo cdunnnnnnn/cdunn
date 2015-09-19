@@ -11,9 +11,11 @@ image: /assets/img/cdunn.jpg
   <div class="post col" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="post-hero" href="{{ post.url }}"{% if post.logo %} style="background-color:#{{ post.color }}"{% else %} style="background-image:url({{ post.image }})"{% endif %}>
       <div class="post-hero-inner">
-        <span itemprop="name" hidden>{{ site.author.name }}</span>
-        <span itemprop="headline" hidden>{{ post.title }}</span>
-        <span itemprop="image" hidden>{{ post.image }}</span>
+        <span hidden>
+          <span itemprop="name">{{ site.author.name }}</span>
+          <span itemprop="headline">{{ post.title }}</span>
+          <img itemprop="image" src="{{ post.image }}">
+        </span>
         {% if post.logo %}
           <a class="icn icn-lgt icn-logo" href="{{ post.externalUrl }}" target="_blank" style="width:{{ post.logoWidth }};height:{{ post.logoHeight}}">{% include {{ post.logo }} %}</a>
         {% else %}
