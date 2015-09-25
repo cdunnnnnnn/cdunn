@@ -26,9 +26,9 @@ googleAnalytics: UA-50747921-1
 future: false
 show_drafts: false
 # Disables the more accurate related posts for faster generating of the site
-lsi: false
+lsi: true
 # Only make the last 3 posts so generating isn't slow
-limit_posts: 3
+limit_posts: 12
 
 # Permalink structure and pagination options
 relative_permalinks: true

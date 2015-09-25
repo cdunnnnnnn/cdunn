@@ -122,10 +122,14 @@ img {
 
 .emoji {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   vertical-align: top;
   margin: 4px 0 0; }
+  @media screen and (min-width: 48rem) {
+    .emoji {
+      width: 20px;
+      height: 20px; } }
 
 .cntr {
   position: absolute;
@@ -1628,7 +1632,11 @@ footer a {
     background: linear-gradient(45deg, #2c2e31 0%, transparent 100%);
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2e31', endColorstr='transparent', GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */ }
+    /* IE6-9 fallback on horizontal gradient */
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out; }
+  .post-hero.post-hovered:before {
+    opacity: 1; }
 
 .post-hero-inner {
   position: absolute;
@@ -2013,14 +2021,43 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 .css .o, .css .o + .nt, .css .nt + .nt {
   color: #747a82; }
 
-@media screen and (min-width: 48rem) {
-  .row {
-    display: table;
-    table-layout: fixed;
-    width: 100%; }
-  .col {
-    display: table-cell; } }
+.row {
+  letter-spacing: -0.31em;
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */
+  /*
+  Use flexbox when possible to avoid `letter-spacing` side-effects.
+  NOTE: Firefox (as of 25) does not currently support flex-wrap, so the
+  `-moz-` prefix version is omitted.
+  */
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  /* IE10 uses display: flexbox */
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap;
+  /* Prevents distributing space between rows */
+  -ms-align-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start; }
 
-.col-cntr {
-  text-align: center;
-  vertical-align: middle; }
+[class*="col-"] {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+
+.col-md-1-2 {
+  width: 100%; }
+  @media screen and (min-width: 48rem) {
+    .col-md-1-2 {
+      width: 50%;
+      *width: 49.969%; } }

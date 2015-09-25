@@ -2,6 +2,7 @@
 
 ## ToDo
 
-- 404.html
+- RSS
+- Search
 - Pattern library
 - Fix block rendering styles/scripts

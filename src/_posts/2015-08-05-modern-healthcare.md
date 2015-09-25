@@ -12,6 +12,6 @@ color: 424b55
 externalUrl: http://www.modernhealthcare.com
 ---
 
-I started at [Crain](http://www.crain.com) developing products for [Modern Healthcare](http://www.modernhealthcare.com) out of the Chicago offcie. We spent the majority of 2014 researching &amp; redesigning the site. In the prior year, editorial had done the same for the print magazine and so it was prime time to revisit the site. Our main goal was to make it responsive so that our readers could access our content from any device. I developed it to be mobile-first and used a number of different tools: Gulp.js (for the build system), LESS (preprocessor) and started versioning the site on GitHub. After about a month of development, we launched on October 31st.
+I started at [Crain](http://www.crain.com) developing products for [Modern Healthcare](http://www.modernhealthcare.com) out of the Chicago office. We spent the majority of 2014 researching &amp; redesigning the site. In the prior year, editorial had done the same for the print magazine and so the same process was applied to the website. Our main goal was to make it responsive and provide our readers with optimized content on any device. We developed it to be mobile-first and used a number of different tools, some of which include [Gulp.js](http://gulpjs.com/), [LESS](http://lesscss.org/) and [Pure CSS](http://purecss.io/). After about a month of development, we launched on October 31st.
 
-<a class="btn btn-sz-md btn-radius">Visit</a>
+{% include visit.html %}

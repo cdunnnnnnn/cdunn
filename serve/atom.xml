@@ -4,7 +4,7 @@
  <title>Christopher Dunn</title>
  <link href="http://cdunn.io/atom.xml" rel="self"/>
  <link href="http://cdunn.io/"/>
- <updated>2015-09-19T18:38:08-05:00</updated>
+ <updated>2015-09-24T20:16:44-05:00</updated>
  <id>http://cdunn.io</id>
  <author>
    <name>Christopher Dunn</name>
@@ -13,13 +13,35 @@
 
  
  <entry>
+   <title>Special Report</title>
+   <link href="http://cdunn.io/work/2015/09/20/special-report/"/>
+   <updated>2015-09-20T00:00:00-05:00</updated>
+   <id>http://cdunn.io/work/2015/09/20/special-report</id>
+   <content type="html">&lt;p&gt;This was developed for an editorial project that expanded on our typical article layout with all new features. We provide our readers with a design that includes plenty of white space, larger typography, more paragraph photos, charts/graphs, videos and lots of quotes. This is coded to be mobile-first and fluid.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-sz-md btn-radius&quot; href=&quot;http://www.modernhealthcare.com/section/learning-to-be-lean/&quot; target=&quot;_blank&quot;&gt;Visit&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>communityApp</title>
+   <link href="http://cdunn.io/work/2015/09/19/communityApp/"/>
+   <updated>2015-09-19T00:00:00-05:00</updated>
+   <id>http://cdunn.io/work/2015/09/19/communityApp</id>
+   <content type="html">&lt;p&gt;We wanted to build an app using the latest in client side solutions to give our readers an immersive experience when navigating our award &amp;amp; recognition programs. On the backend I developed a JSON api on top of our serverside CMS, then used &lt;a href=&quot;https://angularjs.org/&quot;&gt;Angular.js&lt;/a&gt; on the frontend to iterate over the data. Users are now able to apply filters to the list, visit detailed bio views and quickly switch between different program/year views.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-sz-md btn-radius&quot; href=&quot;http://www.modernhealthcare.com/community/100-most-influential/2015/&quot; target=&quot;_blank&quot;&gt;Visit&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Modern Healthcare</title>
    <link href="http://cdunn.io/work/2015/08/05/modern-healthcare/"/>
    <updated>2015-08-05T00:00:00-05:00</updated>
    <id>http://cdunn.io/work/2015/08/05/modern-healthcare</id>
-   <content type="html">&lt;p&gt;I started at &lt;a href=&quot;http://www.crain.com&quot;&gt;Crain&lt;/a&gt; developing products for &lt;a href=&quot;http://www.modernhealthcare.com&quot;&gt;Modern Healthcare&lt;/a&gt; out of the Chicago offcie. We spent the majority of 2014 researching &amp;amp; redesigning the site. In the prior year, editorial had done the same for the print magazine and so it was prime time to revisit the site. Our main goal was to make it responsive so that our readers could access our content from any device. I developed it to be mobile-first and used a number of different tools: Gulp.js (for the build system), LESS (preprocessor) and started versioning the site on GitHub. After about a month of development, we launched on October 31st.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I started at &lt;a href=&quot;http://www.crain.com&quot;&gt;Crain&lt;/a&gt; developing products for &lt;a href=&quot;http://www.modernhealthcare.com&quot;&gt;Modern Healthcare&lt;/a&gt; out of the Chicago office. We spent the majority of 2014 researching &amp;amp; redesigning the site. In the prior year, editorial had done the same for the print magazine and so the same process was applied to the website. Our main goal was to make it responsive and provide our readers with optimized content on any device. We developed it to be mobile-first and used a number of different tools, some of which include &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp.js&lt;/a&gt;, &lt;a href=&quot;http://lesscss.org/&quot;&gt;LESS&lt;/a&gt; and &lt;a href=&quot;http://purecss.io/&quot;&gt;Pure CSS&lt;/a&gt;. After about a month of development, we launched on October 31st.&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&quot;btn btn-sz-md btn-radius&quot;&gt;Visit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;btn btn-sz-md btn-radius&quot; href=&quot;http://www.modernhealthcare.com&quot; target=&quot;_blank&quot;&gt;Visit&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -28,7 +50,7 @@
    <link href="http://cdunn.io/blog/2015/08/01/tools/"/>
    <updated>2015-08-01T00:00:00-05:00</updated>
    <id>http://cdunn.io/blog/2015/08/01/tools</id>
-   <content type="html">&lt;p&gt;Modern front end development is always changing. New tools are constantly cropping up and it can sometimes be difficult to stay on top of them all. However, it&amp;rsquo;s really important to realize that you don&amp;rsquo;t necessarily need to know everything that&amp;rsquo;s out there. All you really only need to know the good parts.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Modern front end development is always changing. New tools are constantly cropping up and it can sometimes be difficult to stay on top of them all. However, it&amp;rsquo;s really important to realize that you don&amp;rsquo;t necessarily need to know everything that&amp;rsquo;s out there. All you really need to know are the good parts.&lt;/p&gt;
 
 &lt;h3 id=&quot;atom-io&quot;&gt;Atom.io&lt;/h3&gt;
 
@@ -36,24 +58,24 @@
 
 &lt;p&gt;Did I mention that it&amp;rsquo;s open source?&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Some of my favorite packages include:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Some of my favorite packages include:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/pigments&quot;&gt;pigments&lt;/a&gt; - displays colors in project and files&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/file-icons&quot;&gt;file-icons&lt;/a&gt; adds file specific icons to Atom&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/project-manager&quot;&gt;project manager&lt;/a&gt; - for easy access and switching between projects in Atom&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/file-types&quot;&gt;file-types&lt;/a&gt; - specify additional file types for languages&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/Remote-FTP&quot;&gt;remote-FTP&lt;/a&gt; - FTP client for Atom&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/atom-spotify2&quot;&gt;atom-spotify&lt;/a&gt; - displays the currently playing song in Spotify in Atom&amp;rsquo;s status bar&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/pigments&quot;&gt;pigments&lt;/a&gt; - &lt;em&gt;displays colors in project and files&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/file-icons&quot;&gt;file-icons&lt;/a&gt; &lt;em&gt;adds file specific icons to Atom&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/project-manager&quot;&gt;project manager&lt;/a&gt; - &lt;em&gt;for easy access and switching between projects in Atom&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/file-types&quot;&gt;file-types&lt;/a&gt; - &lt;em&gt;specify additional file types for languages&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/Remote-FTP&quot;&gt;remote-FTP&lt;/a&gt; - &lt;em&gt;FTP client for Atom&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://atom.io/packages/atom-spotify2&quot;&gt;atom-spotify&lt;/a&gt; - &lt;em&gt;displays the currently playing song in Spotify in Atom&amp;rsquo;s status bar&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;cli&quot;&gt;CLI&lt;/h3&gt;
 
-&lt;p&gt;Pretty much every new front end tool uses the command line. If you want to automate your tasks and delpoy right from your local build, then you&amp;rsquo;re going to spend a lot of time in the CLI. Most stuff is pretty simple, but you can get real advanced with it. Code Academy has a good, free introductory course &lt;a href=&quot;https://www.codecademy.com/en/courses/learn-the-command-line&quot;&gt;right here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pretty much every new front end tool uses the command line. If you want to automate your tasks and delpoy right from your local build, then you&amp;rsquo;re going to spend a lot of time in the CLI. Most stuff is pretty simple, but you can get real advanced with it should you chose. Code Academy has an execellent and free introductory course &lt;a href=&quot;https://www.codecademy.com/en/courses/learn-the-command-line&quot;&gt;right here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;gulp-js&quot;&gt;Gulp.js&lt;/h3&gt;
 
-&lt;p&gt;The streaming build system has forever changed the way I code. I can&amp;rsquo;t even imagine building another site no matter how large or small without &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp.js&lt;/a&gt;. I seriously love this tool. You can automate any task imaginable and maintain clean, solid source code, while simultaneously producing highly optimized production code.&lt;/p&gt;
+&lt;p&gt;This has forever changed the way I code. I can&amp;rsquo;t even imagine building another site without &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp.js&lt;/a&gt;, no matter how large or small. I seriously love this tool. You can automate any task imaginable and maintain clean, solid source code while simultaneously producing highly optimized production code.&lt;/p&gt;
 
 &lt;p&gt;I use a &lt;code&gt;gulpfile.js&lt;/code&gt; similar to &lt;a href=&quot;https://gist.github.com/pxdunn/bb4604f2c20cee19c16b&quot;&gt;this&lt;/a&gt; for a static sites.&lt;/p&gt;
 
@@ -64,21 +86,25 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;..And your done.&lt;/p&gt;
 
+&lt;h3 id=&quot;yeoman&quot;&gt;Yeoman&lt;/h3&gt;
+
+&lt;p&gt;An excellent way to scaffold your projects, &lt;a href=&quot;http://yeoman.io/&quot;&gt;Yeoman&lt;/a&gt; has a generator for almost any app you can imagine &amp;mdash; many of which use the same tools mentioned above.&lt;/p&gt;
+
 &lt;h3 id=&quot;github&quot;&gt;GitHub&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt; has so many practical uses, it&amp;rsquo;s ridiculous. Number one being versioning, which is insanely important&amp;hellip; Especially if the codebase you work on has other team members in there all the time. Beyond that, it&amp;rsquo;s great for housing snippets, documentation and public collaboration. You can even publish content directly on &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; at no cost to you. &lt;img class=&#39;emoji&#39; title=&#39;:+1:&#39; alt=&#39;:+1:&#39; src=&#39;https://assets.github.com/images/icons/emoji/unicode/1f44d.png&#39; height=&#39;20&#39; width=&#39;20&#39; align=&#39;absmiddle&#39; /&gt; Nice.&lt;/p&gt;
 
 &lt;h3 id=&quot;surge&quot;&gt;Surge&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://surge.sh/&quot;&gt;Surge&lt;/a&gt; fairly is new to me. Basically, it&amp;rsquo;s free and works like just like any other CDN for your static sites. You can deploy straight from the command line and even setup a custom domain name in only seconds.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://surge.sh/&quot;&gt;Surge&lt;/a&gt; fairly is new to me. Basically, it&amp;rsquo;s free and works just like any other CDN for your static sites. You can deploy straight from the command line and even setup a custom domain name in only seconds.&lt;/p&gt;
 
 &lt;h3 id=&quot;slack&quot;&gt;Slack&lt;/h3&gt;
 
-&lt;p&gt;Even if you&amp;rsquo;re not working on a big team, &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; is a great tool for taking notes, tracking progress and communicating to clients on projects. There are lots of channel integrations and you can set it up as a virtual watch dog for your server. Slack will ping you instantly.&lt;/p&gt;
+&lt;p&gt;Even if you&amp;rsquo;re not working on a big team, &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; is a great tool for taking notes, tracking progress and communicating with clients. There are lots of channel integrations and you can set it up as a virtual watch dog for your server. Slack will ping you instantly. It&amp;rsquo;s also just plain ol&amp;rsquo; fun.&lt;/p&gt;
 
-&lt;h4 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h4&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
-&lt;p&gt;That&amp;rsquo;s nowhere near the amount of options a front end dev has today. If you want to get the best tools and not pay a penny, check out and follow what other people are doing. Read their source code on GitHub. Follow a publisher. I&amp;rsquo;ve got a nifty Chrome extensive that aggregates news from a lot of excellent sources called &lt;a href=&quot;&quot;&gt;Panda&lt;/a&gt;. Staying sharp and informed will help you make the right choices amongst the vast array of modern front end tools.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s nowhere near the amount of options a front end dev has today. If you want to get the best tools and not pay a penny, check out and follow what other people are doing. Read their source code on GitHub. Follow a publisher. Staying informed and sharpening your skills will help you make the right choices amongst the vast array of modern front end tools.&lt;/p&gt;
 </content>
  </entry>
  

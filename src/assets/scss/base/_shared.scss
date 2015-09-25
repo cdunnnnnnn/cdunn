@@ -137,10 +137,14 @@ img {
 
 .emoji {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   vertical-align: top;
   margin: 4px 0 0;
+  @include bp-md {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .cntr {

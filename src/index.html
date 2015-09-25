@@ -8,8 +8,8 @@ image: /assets/img/cdunn.jpg
 
 <div class="posts row">
   {% for post in paginator.posts %}
-  <div class="post col" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="post-hero" href="{{ post.url }}"{% if post.logo %} style="background-color:#{{ post.color }}"{% else %} style="background-image:url({{ post.image }})"{% endif %}>
+  <div class="post col-md-1-2" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="post-hero" href="{{ post.url }}"{% if post.image %} style="{% if post.logo %}background-color:#{{ post.color }};{% endif %}background-image:url({{ post.image }})"{% endif %}>
       <div class="post-hero-inner">
         <span hidden>
           <span itemprop="name">{{ site.author.name }}</span>
@@ -17,9 +17,9 @@ image: /assets/img/cdunn.jpg
           <img itemprop="image" src="{{ post.image }}">
         </span>
         {% if post.logo %}
-          <a class="icn icn-lgt icn-logo" href="{{ post.externalUrl }}" target="_blank" style="width:{{ post.logoWidth }};height:{{ post.logoHeight}}">{% include {{ post.logo }} %}</a>
+          <a class="icn icn-lgt icn-logo" data-js="post" href="{{ post.externalUrl }}" target="_blank" style="width:{{ post.logoWidth }};height:{{ post.logoHeight}}">{% include {{ post.logo }} %}</a>
         {% else %}
-          <h2 class="post-hero-title" itemprop="headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <h2 class="post-hero-title" data-js="post" itemprop="headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         {% endif %}
         <p class="post-hero-excerpt">{{ post.excerpt }}</p>
         <i class="icn icn-lgt icn-sz-xxs gt-mb">{% include _icons/calendar.html %}</i>
@@ -28,7 +28,7 @@ image: /assets/img/cdunn.jpg
           <span class="post-hero-tags"><i class="icn icn-lgt icn-sz-xxs">{% include _icons/tag.html %}</i>&nbsp;{{ post.categories }}</span>&nbsp;&nbsp;
         {% endif %}
         <i class="icn icn-lgt icn-sz-xxs gt-mb">{% include _icons/comment.html %}</i><a class="post-hero-comments gt-mb" href="{{ post.url }}#comments" data-disqus-identifier="{{ post.url }}">&nbsp;Comments</a>
-        <a class="btn btn-stick-bttm btn-sz-md btn-radius" href="{{ post.url }}">More</a>
+        <a class="btn btn-stick-bttm btn-sz-md btn-radius" data-js="post" href="{{ post.url }}">More</a>
       </div>
     </div>
   </div>
