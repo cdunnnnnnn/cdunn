@@ -17,9 +17,9 @@ image: /assets/img/cdunn.jpg
           <img itemprop="image" src="{{ post.image }}">
         </span>
         {% if post.logo %}
-          <a class="icn icn-lgt icn-logo" data-js="post" href="{{ post.externalUrl }}" target="_blank" style="width:{{ post.logoWidth }};height:{{ post.logoHeight}}">{% include {{ post.logo }} %}</a>
+          <a class="icn icn-lgt icn-logo" data-js="post" href="{{ post.externalUrl }}" target="_blank" style="width:{{ post.logoWidth }};height:{{ post.logoHeight}}" onclick="_gaq.push(['_trackEvent','post','click','logo']);">{% include {{ post.logo }} %}</a>
         {% else %}
-          <h2 class="post-hero-title" data-js="post" itemprop="headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <h2 class="post-hero-title" data-js="post" itemprop="headline"><a href="{{ post.url }}" onclick="_gaq.push(['_trackEvent','post','click','headline']);">{{ post.title }}</a></h2>
         {% endif %}
         <p class="post-hero-excerpt">{{ post.excerpt }}</p>
         <i class="icn icn-lgt icn-sz-xxs gt-mb">{% include _icons/calendar.html %}</i>
@@ -27,8 +27,8 @@ image: /assets/img/cdunn.jpg
         {% if post.categories %}
           <span class="post-hero-tags"><i class="icn icn-lgt icn-sz-xxs">{% include _icons/tag.html %}</i>&nbsp;{{ post.categories }}</span>&nbsp;&nbsp;
         {% endif %}
-        <i class="icn icn-lgt icn-sz-xxs gt-mb">{% include _icons/comment.html %}</i><a class="post-hero-comments gt-mb" href="{{ post.url }}#comments" data-disqus-identifier="{{ post.url }}">&nbsp;Comments</a>
-        <a class="btn btn-stick-bttm btn-sz-md btn-radius" data-js="post" href="{{ post.url }}">More</a>
+        <i class="icn icn-lgt icn-sz-xxs gt-mb">{% include _icons/comment.html %}</i><a class="post-hero-comments gt-mb" href="{{ post.url }}#comments" data-disqus-identifier="{{ post.url }}" onclick="_gaq.push(['_trackEvent','post','click','comments']);">&nbsp;Comments</a>
+        <a class="btn btn-stick-bttm btn-sz-md btn-radius" data-js="post" href="{{ post.url }}" onclick="_gaq.push(['_trackEvent','post','click','more button']);">More</a>
       </div>
     </div>
   </div>
@@ -38,15 +38,15 @@ image: /assets/img/cdunn.jpg
 <div class="container">
   <div class="pagination">
     {% if paginator.next_page %}
-      <a class="pagination-item older" href="/page{{paginator.next_page}}">&larr; Older</a>
+      <a class="pagination-item older" href="/page{{paginator.next_page}}" onclick="_gaq.push(['_trackEvent','pagination','click','older']);">&larr; Older</a>
     {% else %}
       <span class="pagination-item older">&larr; Older</span>
     {% endif %}
     {% if paginator.previous_page %}
       {% if paginator.page == 2 %}
-        <a class="pagination-item newer" href="/">Newer &rarr;</a>
+        <a class="pagination-item newer" href="/" onclick="_gaq.push(['_trackEvent','pagination','click','newer']);">Newer &rarr;</a>
       {% else %}
-        <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer &rarr;</a>
+        <a class="pagination-item newer" href="/page{{paginator.previous_page}}" onclick="_gaq.push(['_trackEvent','pagination','click','newer']);">Newer &rarr;</a>
       {% endif %}
     {% else %}
       <span class="pagination-item newer">Newer &rarr;</span>

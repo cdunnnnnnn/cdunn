@@ -1,7 +1,7 @@
 ---
 layout: post
 category: Work
-date: 2015-09-20
+date: 2015-09-26
 title: Special Report
 excerpt: Layout for Modern Healthcare's unique stories
 image: /assets/img/posts/20150928-01.jpg

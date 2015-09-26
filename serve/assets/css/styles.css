@@ -378,32 +378,10 @@ img {
   margin: 0 0 1rem;
   border-radius: 0.3125rem; }
 
-/*
-//  Google Maps
-.map {
-  position: relative;
-  width: 100%;
-  height: rem(200px);
-  border-radius: rem(4px);
-  &:before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    color: $white;
-    text-align: center;
-    background-color: $black;
-    padding: rem(4px);
-    z-index: 999;
-  }
-}
-*/
-/*
-div[data-js="map-home"]:before {
-  content: "West Town - Milwaukee, WI";
-}
-*/
+iframe[id*="cp_embed"] {
+  width: 100% !important;
+  margin-bottom: 2.25rem; }
+
 iframe[id*="twitter-widget"] {
   margin: 2.25rem auto !important; }
 
@@ -1619,7 +1597,7 @@ footer a {
     display: block;
     width: 100%;
     height: 100%;
-    opacity: .5;
+    opacity: .65;
     background: #2c2e31;
     /* Old browsers */
     background: -webkit-gradient(linear, left, right, color-stop(0%, #2c2e31), color-stop(100%, transparent));

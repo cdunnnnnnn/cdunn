@@ -1,14 +1,14 @@
 <ul class="share" data-js="share">
   <li class="twitter">
-    <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }} - {{ page.excerpt }}&via=pxdunn" title="Share on Twitter" target="_blank"><span class="icn icn-sz-xs">{% include _icons/twitter.html %}</span></a>
+    <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }} - {{ page.excerpt }}&via=pxdunn" title="Share on Twitter" target="_blank" onclick="_gaq.push(['_trackEvent','share','click','twitter']);"><span class="icn icn-sz-xs">{% include _icons/twitter.html %}</span></a>
   </li>
   <li class="facebook">
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&t={{ page.title }} - {{ page.excerpt }}" title="Share on Facebook" target="_blank"><span class="icn icn-sz-xs">{% include _icons/facebook.html %}</span></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&t={{ page.title }} - {{ page.excerpt }}" title="Share on Facebook" target="_blank" onclick="_gaq.push(['_trackEvent','share','click','facebook']);"><span class="icn icn-sz-xs">{% include _icons/facebook.html %}</span></a>
   </li>
   <li class="linkedin">
-    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }} - {{ page.excerpt }}&source={{ site.url }}" title="Share on LinkedIn" target="_blank"><span class="icn icn-sz-xs">{% include _icons/linkedin.html %}</span></a>
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }} - {{ page.excerpt }}&source={{ site.url }}" title="Share on LinkedIn" target="_blank" onclick="_gaq.push(['_trackEvent','share','click','linkedin']);"><span class="icn icn-sz-xs">{% include _icons/linkedin.html %}</span></a>
   </li>
   <li class="googleplus">
-    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus" target="_blank"><span class="icn icn-sz-xs">{% include _icons/googleplus.html %}</span></a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus" target="_blank" onclick="_gaq.push(['_trackEvent','share','click','googleplus']);"><span class="icn icn-sz-xs">{% include _icons/googleplus.html %}</span></a>
   </li>
 </ul>

@@ -14,19 +14,19 @@
   <meta name="twitter:creator" content="@pxdunn">
   <meta name="twitter:title" content="cdunn.io - {{ page.title }}">
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.subtitle }}{% endif %}">
-  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+  <meta name="twitter:image" content="{% if page.externalImage %}{{ page.externalImage }}{% else %}{{ site.url }}{{ page.image }}{% endif %}">
   <meta name="twitter:domain" content="{{ site.url }}">
   <!-- Facebook / Open Graph -->
   <meta property="og:title" content="cdunn.io - {{ page.title }}">
   <meta property="og:type" content="{% if page.is_post %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ site.url }}{% if page.url %}{{ page.url }}{% endif %}">
-  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+  <meta property="og:image" content="{% if page.externalImage %}{{ page.externalImage }}{% else %}{{ site.url }}{{ page.image }}{% endif %}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.subtitle }}{% endif %}">
   <meta property="og:site_name" content="cdunn.io">
   <!-- Google+ / Schema.org  -->
   <meta itemprop="name" content="cdunn.io - {{ page.title }}">
   <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.subtitle }}{% endif %}">
-  <meta itemprop="image" content="{{ site.url }}{{ page.image }}">
+  <meta itemprop="image" content="{% if page.externalImage %}{{ page.externalImage }}{% else %}{{ site.url }}{{ page.image }}{% endif %}">
   <!-- Icons -->
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
