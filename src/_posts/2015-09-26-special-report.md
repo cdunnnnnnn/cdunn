@@ -4,7 +4,7 @@ category: Work
 date: 2015-09-26
 title: Special Report
 excerpt: Layout for Modern Healthcare's unique stories
-image: /assets/img/posts/20150928-01.jpg
+image: /assets/img/posts/20150926-01.jpg
 logo: _logo/special-report.html
 logoWidth: 300px
 logoHeight: 56px
