@@ -5,3 +5,4 @@ gem 'redcarpet'
 gem 'classifier-reborn'
 gem 'fast-stemmer'
 gem 'jemoji'
+gem "html-proofer"

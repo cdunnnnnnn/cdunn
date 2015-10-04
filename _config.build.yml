@@ -14,3 +14,6 @@ limit_posts: 12
 
 source: 'src'
 destination: 'site'
+
+# Exclude
+exclude: [vendor]

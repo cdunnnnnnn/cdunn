@@ -58,3 +58,6 @@ defaults:
 # Gems
 gems:
   ['jemoji']
+
+# Exclude
+exclude: [vendor]
