@@ -1,6 +1,6 @@
 # cdunn.io
 
-https://travis-ci.org/pxdunn/cdunn.svg?branch=master
+![Travis CI](https://travis-ci.org/pxdunn/cdunn.svg?branch=master)
 
 ## ToDo
 
