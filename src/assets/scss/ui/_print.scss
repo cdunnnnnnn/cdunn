@@ -1,0 +1,125 @@
+//------------------------------------//
+//  $PRINT
+//------------------------------------//
+
+@media print {
+
+  // Blacklist
+  .sidebar-toggle,
+  .sidebar,
+  .share,
+  [id="comments"],
+  [id="disqus_thread"] {
+   display: none !important;
+  }
+
+  html,
+  body {
+   color: $black !important;
+   background: #fff;
+  }
+
+  @page {
+   margin: 2cm;
+  }
+
+  // Links
+  article a {
+    color: $black !important;
+    font-weight: $font-weight-bold !important;
+    text-decoration: none !important;
+  }
+  article a[href^="http"]:after {
+    content: " [" attr(href) "] ";
+  }
+  .btn {
+    color: $black !important;
+    text-transform: capitalize !important;
+    text-align: left !important;
+    padding: 0 !important;
+  }
+
+  // Typography
+  h1,h2,h3,h4,h5,h6,
+  p, strong, em , small,
+  ul, ol, dl, dt, dd,
+  abbr, blockquote,
+  pre, code {
+   color: $black !important;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+   page-break-after: avoid;
+  }
+
+  article {
+   page-break-before: always;
+  }
+
+  div[itemprop="articleBody"] {
+    margin-top: 12pt;
+  }
+
+  ul, ol, dl, img {
+   page-break-inside: avoid;
+  }
+
+  svg circle,
+  svg ellipse,
+  svg line,
+  svg path,
+  svg polygon,
+  svg polyline {
+   fill: $black !important;
+  }
+
+  .post-hero {
+    color: $black !important;
+    border-top: 1px solid $gray-light-1 !important;
+    border-bottom: 1px solid $gray-light-1 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    .icn svg > * {
+     fill: $black !important;
+    }
+    .btn {
+      position: static;
+      color: $black !important;
+      font-weight: $font-weight-bold !important;
+      text-decoration: none !important;
+      text-align: left !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      &:after {
+        content: " [http://cdunn.io" attr(href) "] ";
+      }
+    }
+  }
+
+  .location {
+   background-color: none !important;
+   padding: 0 !important;
+   svg path {
+    fill: $black !important;
+   }
+   .location-pin {
+      border-color: transparent !important;
+      background-color: $black !important;
+      opacity: 1 !important;
+    }
+  }
+
+  .footer {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    a {
+      color: $black !important;
+      font-weight: $font-weight-bold;
+     }
+    .social li a svg > * {
+      fill: $black !important;
+    }
+  }
+
+}

@@ -149,22 +149,22 @@
 
 // Breakpoints
 @mixin bp-sm {
-  @media screen and (min-width: rem(568px)) {
-    @content
+  @media screen and (min-width: 568px) {
+    @content;
   }
 }
 @mixin bp-md {
-  @media screen and (min-width: rem(768px)) {
-    @content
+  @media screen and (min-width: 768px) {
+    @content;
   }
 }
 @mixin bp-lg {
-  @media screen and (min-width: rem(1024px)) {
-    @content
+  @media screen and (min-width: 1024px) {
+    @content;
   }
 }
 @mixin bp-xl {
-  @media screen and (min-width: rem(1280px)) {
-    @content
+  @media screen and (min-width: 1280px) {
+    @content;
   }
 }

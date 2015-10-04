@@ -7,17 +7,17 @@ location: true
   <span itemprop="headline" hidden>{{ page.title }} - {{ page.excerpt }}</span>
   <span itemprop="image" hidden>{{ site.url }}{{ page.image }}</span>
   <div class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <a href="/about" onclick="_gaq.push(['_trackEvent','post','click','author']);">
+    <a href="/about">
       <img src="/assets/img/cdunn.jpg" alt="{{ site.title }}">
     </a>
-    by <a href="https://twitter.com/{{ page.author }}" target="_blank" itemprop="name" onclick="_gaq.push(['_trackEvent','post','click','@pxdunn']);">{{ page.author }}</a>
+    by <a href="https://twitter.com/{{ page.author }}" target="_blank" itemprop="name">{{ page.author }}</a>
   </div>
   <div class="post-date">
     <i class="icn icn-drk-lgt icn-sz-xxs">{% include _icons/calendar.html %}</i>
     <span itemprop="datePublished">{{ page.date | date: '%b %d, %Y' }}&nbsp;&nbsp;</span>
   </div>
   <span class="post-tags"><i class="icn icn-drk-lgt icn-sz-xxs">{% include _icons/tag.html %}</i>&nbsp;{{ page.categories }}&nbsp;&nbsp;</span>
-  <span class="post-comments"><i class="icn icn-drk-lgt icn-sz-xxs">{% include _icons/comment.html %}</i><a href="#comments" data-disqus-identifier="{{ page.url }}" onclick="_gaq.push(['_trackEvent','post','click','comments']);"></a></span>
+  <span class="post-comments"><i class="icn icn-drk-lgt icn-sz-xxs">{% include _icons/comment.html %}</i><a href="#comments" data-disqus-identifier="{{ page.url }}"></a></span>
   {% include share.html %}
   <div itemprop="articleBody">
     {{ content }}

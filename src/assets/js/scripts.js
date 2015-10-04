@@ -253,7 +253,7 @@ window.onresize = function() {
 }(window));
 
 // Disqus
-var disqus_shortname = 'cdunnio';
+var disqus_shortname = 'cdunn';
 
 (function () {
   var s = document.createElement('script'); s.async = true;
@@ -261,3 +261,73 @@ var disqus_shortname = 'cdunnio';
   s.src = '//' + disqus_shortname + '.disqus.com/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
+
+// Google Analytics
+(function () {
+  var toggle = document.querySelector('[data-js="sidebar-toggle"]');
+  var logo = document.querySelector('[data-js="logo"]');
+  var smLogo = document.querySelector('[data-js="logo-sm"]');
+  var socialGithub = document.querySelector('[data-js="github"]');
+  var socialTwitter = document.querySelector('[data-js="twitter"]');
+  var socialCodepen = document.querySelector('[data-js="codepen"]');
+  var socialSpotify = document.querySelector('[data-js="spotify"]');
+  var socialRSS = document.querySelector('[data-js="rss"]');
+  var footerNav = document.querySelectorAll('.footer-nav-item');
+  var menuEmail = document.querySelector('[data-js="menu-email"]');
+  var menuNav = document.querySelectorAll('.sidebar-nav-item');
+  var postName = document.querySelectorAll('.post-name');
+  var postMore = document.querySelectorAll('.post-more');
+  addListener(toggle, 'click', function() {
+    ga('send', 'event', 'toggle', 'click', 'menu-toggle');
+  });
+  addListener(logo, 'click', function() {
+    ga('send', 'event', 'logo', 'click', 'header-logo');
+  });
+  addListener(logo, 'click', function() {
+    ga('send', 'event', 'logo', 'click', 'footer-logo');
+  });
+  addListener(socialGithub, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'social-github');
+  });
+  addListener(socialTwitter, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'social-twitter');
+  });
+  addListener(socialCodepen, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'social-codepen');
+  });
+  addListener(socialSpotify, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'social-spotify');
+  });
+  addListener(socialRSS, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'social-rss');
+  });
+  addListener(footerNav, 'click', function() {
+    ga('send', 'event', 'link', 'click', 'footer-link');
+  });
+  addListener(menuEmail, 'click', function() {
+    ga('send', 'event', 'link', 'click', 'menu-email');
+  });
+  addListener(menuNav, 'click', function() {
+    ga('send', 'event', 'link', 'click', 'menu-link');
+  });
+  addListener(postName, 'click', function() {
+    ga('send', 'event', 'link', 'click', 'post-name');
+  });
+  addListener(postMore, 'click', function() {
+    ga('send', 'event', 'link', 'click', 'post-more');
+  });
+
+  /**
+   * Utility to wrap the different behaviors between W3C-compliant browsers
+   * and IE when adding event handlers.
+   *
+   * @param {Object} element Object on which to attach the event listener.
+   * @param {string} type A string representing the event type to listen for
+   *     (e.g. load, click, etc.).
+   * @param {function()} callback The function that receives the notification.
+   */
+  function addListener(element, type, callback) {
+   if (element.addEventListener) element.addEventListener(type, callback);
+   else if (element.attachEvent) element.attachEvent('on' + type, callback);
+  }
+});

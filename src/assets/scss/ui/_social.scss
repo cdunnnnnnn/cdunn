@@ -8,10 +8,10 @@
   li {
     position: relative;
     display: inline-block;
-    width: rem(48px);
-    height: rem(48px);
+    width: rem(42px);
+    height: rem(42px);
     border-radius: 50%;
-    margin: 0 rem(4px);
+    //margin: 0 rem(4px);
     &:first-child { margin-left: 0; }
     &:last-child { margin-right: 0; }
   }
@@ -24,6 +24,9 @@
     border-color: transparent;
     @extend %filler;
     @include transition(all, .2s, ease-in-out);
+    svg > * {
+      @include transition(all, .2s, ease-in-out);
+    }
   }
   li a strong {
     @include centerer(absolute);
@@ -33,22 +36,31 @@
 .github {
   a:hover {
     //background-color: lighten($github, 10%);
-    border-color: $github;
+    border-color: $white;
+  }
+  svg path {
+    fill: $white;
   }
 }
 .twitter {
-  a:hover {
-    //background-color: lighten($twitter, 10%);
-    border-color: $twitter;
-  }
   svg path {
     fill: $twitter;
+  }
+  a:hover {
+    background-color: $twitter;
+    border-color: $twitter;
+    svg path {
+      fill: $white;
+    }
   }
 }
 .codepen {
   a:hover {
     //background-color: lighten($codepen, 10%);
-    border-color: $codepen;
+    border-color: $white;
+  }
+  svg path {
+    fill: $white;
   }
 }
 /*
@@ -60,21 +72,40 @@
 }
 */
 .spotify {
-  a:hover {
-    //background-color: lighten($spotify, 10%);
-    border-color: $spotify;
-  }
   svg path {
     fill: $spotify;
   }
-}
-.email {
   a:hover {
-    //background-color: $gray-dark-2;
-    border-color: $gray-dark-3;
+    background-color: $spotify;
+    border-color: $spotify;
+    svg path {
+      fill: $white;
+    }
   }
+}
+.googleplus {
   svg path {
-    fill: $gray-dark-2;
+    fill: $googleplus;
+  }
+  a:hover {
+    background-color: $googleplus;
+    border-color: $googleplus;
+    svg path {
+      fill: $white;
+    }
+  }
+}
+.email,
+.rss {
+  svg path {
+    fill: $gray-dark-1;
+  }
+  a:hover {
+    background-color: $gray-dark-1;
+    border-color: $gray-dark-1;
+    svg path {
+      fill: $white;
+    }
   }
 }
 

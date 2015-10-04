@@ -19,7 +19,7 @@ html, body {
 html {
   font-family: $primary-font;
   font-size: rem(16px);
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   line-height: 1.5;
   background-color: $white;
   @include bp-md {
