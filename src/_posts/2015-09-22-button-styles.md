@@ -3,7 +3,7 @@ layout: post
 category: Blog
 date: 2015-09-22
 title: Button Styles
-excerpt: Just another codepen experiment
+excerpt: A codepen experiment
 image: http://magdeleine.co/wp-content/uploads/2015/01/tongariro-national-park-493289-1400x933.jpg
 externalImage: http://magdeleine.co/wp-content/uploads/2015/01/tongariro-national-park-493289-1400x933.jpg
 externalUrl: http://codepen.io/pxdunn/pen/FLsvf
