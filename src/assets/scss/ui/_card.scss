@@ -2,13 +2,15 @@
 //  $CARD
 //------------------------------------//
 
+$card-fontsize: rem(12px);
 $card-background: #fff;
 $card-border: $gray-light-2;
-$card-radius: rem(5px);
+$card-radius: rem(3px);
 $card-shadow: 0 rem(2px) rem(4px) $gray-light-1;
 
 .card {
   width: 100%;
+  font-size: $card-fontsize;
   background-color: $card-background;
   border: 1px solid $card-border;
   border-radius: $card-radius;
@@ -20,23 +22,71 @@ $card-shadow: 0 rem(2px) rem(4px) $gray-light-1;
   }
 }
 
+.card-blur {
+  position: relative;
+  display: block;
+  background-color: $black;
+  border-top-left-radius: rem(3px);
+  border-top-right-radius: rem(3px);
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    border-top-left-radius: rem(3px);
+    border-top-right-radius: rem(3px);
+    opacity: 0;
+    @include transition(opacity, .25s, ease-in-out);
+  }
+  &:after {
+    content: "";
+    @include centerer(absolute);
+    display: block;
+    width: rem(72px);
+    height: rem(72px);
+    background: url("../img/instagram.svg") no-repeat 0 0;
+    @include bg-size(100%);
+    opacity: 0;
+    @include transition(opacity, .25s, ease-in-out);
+  }
+}
+
 .card-img {
+  border-top-left-radius: rem(3px);
+  border-top-right-radius: rem(3px);
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   margin-bottom: 0;
+  @include transition(all, .25s, ease-in-out);
+}
+
+.card-blur:hover, .card-blur:focus {
+  &:after {
+    opacity: 1;
+  }
+  .card-img {
+    filter: brightness(.85) grayscale(35%) blur(3px);
+  }
 }
 
 .card-header {
-  color: $white;
-  padding: rem(16px);
+  text-align: right;
+  //border-bottom: 1px solid $gray-light-1;
+  padding: rem(8px);
 }
 
 .card-main {
-  padding: rem(16px);
+  word-break: break-word;
+  padding: 0 rem(8px) rem(8px);
   h4, h5, h5 {
     margin-top: 0;
   }
   p {
+    margin-top: rem(6px);
     margin-bottom: 0;
   }
 }

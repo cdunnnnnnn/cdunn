@@ -31,7 +31,6 @@ lsi: true
 limit_posts: 12
 
 # Permalink structure and pagination options
-relative_permalinks: true
 permalink: pretty
 paginate: 12
 paginate_path: '/page/:num'
@@ -57,7 +56,7 @@ defaults:
 
 # Gems
 gems:
-  ['jemoji']
+  ['jekyll-paginate','jemoji']
 
 # Exclude
 exclude: [vendor]

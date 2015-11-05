@@ -9,6 +9,12 @@
   @include bp-md {
     margin-top: 0;
   }
+  a img {
+    @include transition(border-color, .25s, ease-in-out);
+  }
+  a:hover img, a:focus img {
+    border-color: $gray-light-3;
+  }
 }
 
 .fig-rgt {
@@ -39,6 +45,10 @@
     margin-bottom: rem(16px);
     margin-left: 0;
   }
+}
+
+.fig-xs {
+  max-width: rem(96px);
 }
 
 .fig-sm {

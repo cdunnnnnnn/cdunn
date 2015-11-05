@@ -4,7 +4,7 @@
  <title>Christopher Dunn</title>
  <link href="http://cdunn.io/atom.xml" rel="self"/>
  <link href="http://cdunn.io/"/>
- <updated>2015-10-09T21:40:38-05:00</updated>
+ <updated>2015-11-05T17:58:28-06:00</updated>
  <id>http://cdunn.io</id>
  <author>
    <name>Christopher Dunn</name>
@@ -40,7 +40,7 @@
  
  <entry>
    <title>communityApp</title>
-   <link href="http://cdunn.io/work/2015/09/19/communityApp/"/>
+   <link href="http://cdunn.io/work/2015/09/19/communityapp/"/>
    <updated>2015-09-19T00:00:00-05:00</updated>
    <id>http://cdunn.io/work/2015/09/19/communityApp</id>
    <content type="html">&lt;p&gt;We wanted to build an app using the latest in client side solutions to give our readers an immersive experience when navigating our award &amp;amp; recognition programs. On the backend I developed a JSON api on top of our serverside CMS, then used &lt;a href=&quot;https://angularjs.org/&quot;&gt;Angular.js&lt;/a&gt; on the frontend to iterate over the data. Users are now able to apply filters to the list, visit detailed bio views and quickly switch between different program/year views.&lt;/p&gt;
@@ -97,7 +97,7 @@
 &lt;h3 id=&quot;bower&quot;&gt;Bower&lt;/h3&gt;
 
 &lt;p&gt;Going along with build systems is a great package manager named &lt;a href=&quot;http://bower.io&quot;&gt;Bower&lt;/a&gt;. I like it because it seamlessly integrates and you can quickly grab your dependencies:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bower install your-package-name
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bower install your-package-name
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;..And your done.&lt;/p&gt;
 

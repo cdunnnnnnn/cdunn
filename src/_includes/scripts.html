@@ -2,5 +2,35 @@
 <!-- build:js /assets/js/scripts.min.js -->
 <script src="/assets/js/scripts.js" async></script>
 <!-- endbuild -->
+{% if page.title == 'Photos' %}
+<script src="/assets/js/vendor/instafeed.min.js"></script>
+<script>
+  // Instagram
+  var feed = new Instafeed({
+      get: 'user',
+      userId: '2215746013',
+      clientId: '8df8587968f7463aaefc80da2295fede',
+      resolution: 'standard_resolution',
+      sortBy: 'most-recent',
+      template: '<div class="col-1 col-md-1-2 col-lg-1-3">' +
+                  '<div class="colpad">' +
+                    '<div class="card">' +
+                      '<a class="card-blur instagram-post" href="{{"{{link"}}}}" target="_blank">' +
+                        '<img class="card-img" src="{{"{{image"}}}}" alt="{{"{{caption"}}}}">' +
+                      '</a>' +
+                      '<div class="card-header">' +
+                        '<span class="icn icn-sz-xxs icn-drk-lgt" title="likes"><svg viewBox="0 0 56 56"><path d="M28 48C28 48 28 48 28 48c-1.3 0-2.5-0.5-3.5-1.4 -4.7-4.7-6.7-6.5-8.3-7.8 -1.1-1-2.1-1.8-3.6-3.3 -3.8-3.8-7-7.4-7.5-13.3 -0.3-3.6 0.8-7.1 3.1-9.8 2.2-2.5 5.1-4 8.3-4.2 4.8-0.3 9.2 2.2 11.5 6.2 2.3-4 6.7-6.5 11.5-6.2l0 0c3.2 0.2 6.2 1.7 8.3 4.2 2.3 2.7 3.4 6.2 3.1 9.8 -0.5 5.9-3.7 9.5-7.5 13.3 -3.1 3.1-4.8 4.6-6.4 6 -1.5 1.4-3 2.7-5.6 5.2C30.5 47.5 29.3 48 28 48zM17.3 10c-0.2 0-0.4 0-0.6 0 -2.7 0.2-5.1 1.4-6.9 3.5 -2 2.3-2.9 5.3-2.7 8.3 0.4 4.7 2.8 7.9 6.9 12.1 1.5 1.5 2.4 2.3 3.5 3.2 1.6 1.4 3.7 3.2 8.4 8 0.5 0.5 1.3 0.8 2 0.9 0 0 0 0 0 0 0.8 0 1.5-0.3 2-0.8 2.6-2.6 4.1-3.9 5.7-5.3 1.6-1.4 3.3-2.9 6.3-5.9 4.2-4.2 6.5-7.3 6.9-12.1 0.3-3-0.7-6.1-2.7-8.3 -1.8-2.1-4.3-3.3-6.9-3.5 -4.6-0.3-8.9 2.6-10.4 7L28 19.9l-0.9-2.8C25.6 12.8 21.7 10 17.3 10z"/><path d="M46.2 21h-2c0-3.3-2.2-6-6.2-6v-2C43 13 46.2 16.6 46.2 21z"/><path d="M12.2 21h-2c0-4.4 3.8-8 7.8-8v2C15 15 12.2 17.7 12.2 21z"/></svg></span>&nbsp;<strong>{{"{{likes"}}}}</strong>&nbsp;&nbsp;&nbsp;' +
+                        '<span class="icn icn-sz-xxs icn-drk-lgt" title="comments"><svg viewBox="0 0 56 56"><circle cx="20.9" cy="27.4" r="2.6"/><circle cx="35.9" cy="27.4" r="2.6"/><circle cx="28.4" cy="27.4" r="2.6"/><path d="M28.4 6.8C17 6.8 7.7 16 7.7 27.5c0 3.9 1.1 7.6 3 10.7L6.9 49.2l11.5-3.7c3 1.6 6.4 2.6 10 2.6 11.4 0 20.7-9.3 20.7-20.7C49.1 16 39.8 6.8 28.4 6.8zM28.4 45.8c-3.5 0-6.8-1-9.6-2.7l-8.3 2.7 2.7-8c-2-2.9-3.2-6.5-3.2-10.3 0-10.1 8.2-18.3 18.3-18.3 10.1 0 18.3 8.2 18.3 18.3C46.7 37.6 38.5 45.8 28.4 45.8z"/></svg></span><strong>&nbsp;{{"{{comments"}}}}</strong>' +
+                      '</div>' +
+                      //'<div class="card-main">' +
+                        //'<p>{{"{{caption"}}}}</p>' +
+                      //'</div>' +
+                    '</div>' +
+                  '</div>' +
+                '</div>'
+  });
+  feed.run();
+</script>
+{% endif %}
 <!-- Google Analytics -->
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-50747921-1','auto');ga('send','pageview');</script>

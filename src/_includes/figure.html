@@ -1,5 +1,7 @@
-<figure class="fig{% if include.align == 'right' %} fig-rgt{% else %} fig-lft{% endif %}{% if include.size == 'small' %} fig-sm{% else %} fig-lg{% endif %}">
-	<img class="fig-img" src="{{ include.src }}" alt="{{ include.alt }}" title="{{ include.alt }}">
+<figure class="fig{% if include.align == 'right' %} fig-rgt{% else %} fig-lft{% endif %}{% if include.size == 'extra-small' %} fig-xs{% else if include.size == 'small' %} fig-sm{% else %} fig-lg{% endif %}">
+	{% if include.externalUrl %}<a{% if include.class %} class="{{ include.class }}"{% endif %} href="{{ include.externalUrl }}" target="_blank">{% endif %}
+		<img class="fig-img" src="{{ include.src }}" alt="{{ include.alt }}" title="{{ include.alt }}">
+	{% if include.externalUrl %}</a>{% endif %}
 	{% if include.social == 'true' %}
 	<div class="social fig-social">
 		<ul>

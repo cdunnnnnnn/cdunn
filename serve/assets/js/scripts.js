@@ -277,6 +277,9 @@ var disqus_shortname = 'cdunn';
   var menuNav = document.querySelectorAll('.sidebar-nav-item');
   var postName = document.querySelectorAll('.post-name');
   var postMore = document.querySelectorAll('.post-more');
+  var instagramPost = document.querySelector('.instagram-post');
+  var instagramAvatar = document.querySelector('.instagram-avatar');
+  var instagramLogo = document.querySelector('.icn-instagram');
   addListener(toggle, 'click', function() {
     ga('send', 'event', 'toggle', 'click', 'menu-toggle');
   });
@@ -315,6 +318,15 @@ var disqus_shortname = 'cdunn';
   });
   addListener(postMore, 'click', function() {
     ga('send', 'event', 'link', 'click', 'post-more');
+  });
+  addListener(instagramPost, 'click', function() {
+    ga('send', 'event', 'link', 'click', 'instagram-post');
+  });
+  addListener(instagramAvatar, 'click', function() {
+    ga('send', 'event', 'link', 'click', 'instagram-avatar');
+  });
+  addListener(instagramLogo, 'click', function() {
+    ga('send', 'event', 'link', 'click', 'instagram-logo');
   });
 
   /**
