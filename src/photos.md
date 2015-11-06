@@ -12,7 +12,15 @@ location: true
 
 <br><br>
 
-{% include figure.html src='/assets/img/instagram-avatar.jpg' class='instagram-avatar' size='extra-small' alt='cdunnnnnnn' externalUrl='https://instagram.com/cdunnnnnnn/' %}
-follow me on {% include _icons/instagram-logo.html %}
+<div style="text-align:center;">
+  <figure class="fig fig-xs">
+    <a class="instagram-avatar" href="https://instagram.com/cdunnnnnnn/" target="_blank">
+      <img class="fig-img" src="/assets/img/instagram-avatar.jpg" alt="cdunnnnnnn" title="cdunnnnnnn">
+    </a>
+  </figure>
+  <p>
+    follow me on {% include _icons/instagram-logo.html %}
+  </p>
+</div>
 
 <div class="cf"></div>
