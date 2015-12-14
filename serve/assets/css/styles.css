@@ -979,7 +979,7 @@ iframe[class*="embedly-card"] {
 .instagram-load-more {
   display: block;
   width: 100%;
-  max-width: 20rem;
+  max-width: 11.25rem;
   color: #3f729b !important;
   font-weight: 700;
   text-align: center;
