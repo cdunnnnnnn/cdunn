@@ -47,20 +47,21 @@
 
       <footer class="footer footer-lg">
         <div class="container">
-          <div class="logo logo-sm">
-            <a href="/" title="Home" data-js="logo-sm">
-              {% include cdunn.html %}
-            </a>
-          </div>
           <ul class="social">
             <li class="github" data-js="github"><a href="https://github.com/pxdunn" title="GitHub" target="_blank">{% include _icons/github.html %}</strong></a></li>
+            <li class="bitbucket" data-js="bitbucket"><a href="https://bitbucket.org/cdunn-crain/" title="Bitbucket" target="_blank">{% include _icons/bitbucket.html %}</strong></a></li>
+            <li class="slack" data-js="slack"><a href="https://crain-digital.slack.com/team/cdunn" title="Slack" target="_blank">{% include _icons/slack.html %}</strong></a></li>
             <li class="twitter" data-js="twitter"><a href="https://twitter.com/pxdunn" title="Twitter" target="_blank">{% include _icons/twitter.html %}</strong></a></li>
             <li class="codepen" data-js="codepen"><a href="http://codepen.io/pxdunn/" title="Codepen" target="_blank">{% include _icons/codepen.html %}</strong></a></li>
             <li class="spotify" data-js="spotify"><a href="http://open.spotify.com/user/pxdunn" title="Spotify" target="_blank">{% include _icons/spotify.html %}</strong></a></li>
-            <li class="rss" data-js="rss"><a href="/atom.xml" title="RSS" target="_blank">{% include _icons/rss.html %}</strong></a></li>
+            <li class="airbnb" data-js="airbnb"><a href="https://www.airbnb.com/users/show/25643234" title="Airbnb" target="_blank">{% include _icons/airbnb.html %}</strong></a></li>
           </ul>
           <ul class="inline-list" style="margin-bottom:0;">
-            <li><a class="footer-nav-item{% if page.title == 'Home' %} active{% endif %}" href="/">Home</a></li>
+            <li class="logo logo-sm{% if page.title == 'Home' %} active{% endif %}">
+              <a href="/" title="Home" data-js="logo-sm">
+                {% include cdunn.html %}
+              </a>
+            </li>
             <li><a class="footer-nav-item{% if page.title == 'About' %} active{% endif %}" href="/about">About</a></li>
             <li><a class="footer-nav-item{% if page.title == 'Photos' %} active{% endif %}" href="/photos">Photos</a></li>
           </ul>

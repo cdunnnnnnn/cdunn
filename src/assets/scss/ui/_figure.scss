@@ -17,6 +17,10 @@
   }
 }
 
+.fig-cntr {
+  margin: rem(24px) auto;
+}
+
 .fig-rgt {
   @include bp-sm {
     float: right;

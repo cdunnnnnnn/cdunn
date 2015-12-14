@@ -12,8 +12,10 @@ location: true
 
 <br><br>
 
+<a id="load-more">load more</a>
+
 <div style="text-align:center;">
-  <figure class="fig fig-xs">
+  <figure class="fig fig-lg fig-cntr">
     <a class="instagram-avatar" href="https://instagram.com/cdunnnnnnn/" target="_blank">
       <img class="fig-img" src="/assets/img/instagram-avatar.jpg" alt="cdunnnnnnn" title="cdunnnnnnn">
     </a>

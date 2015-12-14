@@ -14,10 +14,10 @@
 }
 
 .logo-sm > a {
+  display: inline-block;
   width: rem(48px);
   height: rem(48px);
-  margin-right: rem(12px);
-  margin-bottom: rem(12px);
+  vertical-align: middle;
   //@include transition(all, .25s, ease-in-out);
 }
 
@@ -90,4 +90,15 @@
   vertical-align: middle;
   opacity: .85;
   padding-left: rem(4px);
+}
+
+.avatar {
+  display: block;
+  width: 100%;
+  max-width: rem(200px);
+  height: auto;
+  margin: rem(72px) auto;
+  svg > * {
+    fill: $gray-light-1;
+  }
 }

@@ -4,7 +4,7 @@
  <title>Christopher Dunn</title>
  <link href="http://cdunn.io/atom.xml" rel="self"/>
  <link href="http://cdunn.io/"/>
- <updated>2015-11-05T18:23:27-06:00</updated>
+ <updated>2015-12-13T17:22:00-06:00</updated>
  <id>http://cdunn.io</id>
  <author>
    <name>Christopher Dunn</name>
@@ -111,7 +111,7 @@
 
 &lt;h3 id=&quot;surge&quot;&gt;Surge&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://surge.sh/&quot;&gt;Surge&lt;/a&gt; fairly is new to me. Basically, it&amp;rsquo;s free and works just like any other CDN for your static sites. You can deploy straight from the command line and even setup a custom domain name in only seconds.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://surge.sh/&quot;&gt;Surge&lt;/a&gt; is fairly new to me. Basically, it&amp;rsquo;s free and works just like any other CDN for your static sites. You can deploy straight from the command line and even setup a custom domain name in only seconds.&lt;/p&gt;
 
 &lt;h3 id=&quot;slack&quot;&gt;Slack&lt;/h3&gt;
 

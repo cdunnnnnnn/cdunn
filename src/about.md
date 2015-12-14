@@ -8,13 +8,13 @@ location: true
 
 ### Hi there, I'm Chris.
 
-{% include figure.html src='/assets/img/cdunn.jpg' alt='@pxdunn' align='right' %}
+{% include figure.html src='/assets/img/cdunn.jpg' alt='@pxdunn' align='right' size='small' %}
 
 I live/work in ~~&nbsp;Chicago, IL&nbsp;~~ Milwaukee, WI and build digital products for [Crain Communications](http://www.crain.com). Most of my days are spent hanging out with my sweet <span class="icn icn-sz-sm icn-heart" title="heart">{% include _icons/heart.html %}</span>, {% include tooltip.html title='April Lily' img='/assets/img/aprilily484.jpg' %} and our pup we named {% include tooltip.html title='Wally.' img='/assets/img/wally.jpg' %}
 
 <div class="cf"></div>
 
-{% include figure.html src='/assets/img/about-02.jpg' alt='Apes and I' size='small' %}
+{% include figure.html src='/assets/img/about-02.jpg' alt='Apes and I' align='left' size='small' %}
 
 #### Stack.
 
@@ -22,7 +22,7 @@ HTML/CSS &bull; Sass &bull; LESS &bull; JS &bull; jQuery &bull; Markdown &bull; 
 
 <div class="cf"></div>
 
-{% include figure.html src='/assets/img/about-01.jpg' alt='Drivin\' w/ Baby Wallers' size='small' align='right' %}
+{% include figure.html src='/assets/img/about-01.jpg' alt='Drivin\' w/ Baby Wallers' align='right' size='small' %}
 
 #### Get In Touch.
 

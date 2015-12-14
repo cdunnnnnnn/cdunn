@@ -26,19 +26,23 @@
   fill: $white;
 }
 
-.icn-mid {
-  fill: $gray-light-5;
+.icn-lgt-drk svg > * {
+  fill: $gray-light-1;
 }
 
-.icn-drk-lgt {
+.icn-drk-lgt svg > * {
   fill: $gray-dark-1;
 }
 
-.icn-drk svg path {
+.icn-drk svg > * {
   fill: $gray-dark-3;
 }
 
-.icn-instagram {
+.icn-quinary svg > * {
+  fill: $quinary
+}
+
+.icn-instagram svg > * {
   fill: $instagram;
 }
 

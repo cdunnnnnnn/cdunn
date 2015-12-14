@@ -17,3 +17,9 @@ iframe[id*="twitter-widget"] {
 iframe[class*="embedly-card"] {
   width: 100% !important;
 }
+
+// Instagram
+.instagram-media {
+  max-width: rem(300px) !important;
+  margin: rem(36px) auto !important;
+}

@@ -4,7 +4,6 @@ var bgImgArry = [
   '/assets/img/bg-01.jpg',
   '/assets/img/bg-02.jpg'
   //'/assets/img/bg-03.jpg'
-  //'/assets/img/bg-04.jpg',
   //'/assets/img/bg-05.jpg',
   //'/assets/img/bg-06.jpg',
   //'/assets/img/bg-07.jpg',
@@ -50,7 +49,7 @@ colorsArray.sort(function() {
 
 document.getElementsByTagName('body')[0].classList.add('color-' + colorsArray[0].class);
 
-var post = document.body.className.match(/(\bcategories-blog\b|\bcategories-work\b)/g);
+var post = document.body.className.match(/(\bcategories-[Bb]log\b|\bcategories-[Ww]ork\b)/g);
 var randomNum = Math.floor(Math.random() * bgImgArry.length);
 var imgSrc = bgImgArry.splice(randomNum, 1);
 
@@ -258,7 +257,7 @@ var disqus_shortname = 'cdunn';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.type = 'text/javascript';
-  s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  s.src = '//cdunnio.disqus.com/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
 
@@ -271,7 +270,10 @@ var disqus_shortname = 'cdunn';
   var socialTwitter = document.querySelector('[data-js="twitter"]');
   var socialCodepen = document.querySelector('[data-js="codepen"]');
   var socialSpotify = document.querySelector('[data-js="spotify"]');
-  var socialRSS = document.querySelector('[data-js="rss"]');
+  var socialBitbucket = document.querySelector('[data-js="bitbucket"]');
+  var socialSlack = document.querySelector('[data-js="slack"]');
+  var socialAirbnb = document.querySelector('[data-js="airbnb"]');
+  //var socialRSS = document.querySelector('[data-js="rss"]');
   var footerNav = document.querySelectorAll('.footer-nav-item');
   var menuEmail = document.querySelector('[data-js="menu-email"]');
   var menuNav = document.querySelectorAll('.sidebar-nav-item');
@@ -301,8 +303,14 @@ var disqus_shortname = 'cdunn';
   addListener(socialSpotify, 'click', function() {
     ga('send', 'event', 'button', 'click', 'social-spotify');
   });
-  addListener(socialRSS, 'click', function() {
-    ga('send', 'event', 'button', 'click', 'social-rss');
+  addListener(socialBitbucket, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'social-bitbucket');
+  });
+  addListener(socialSlack, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'social-slack');
+  });
+  addListener(socialAirbnb, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'social-airbnb');
   });
   addListener(footerNav, 'click', function() {
     ga('send', 'event', 'link', 'click', 'footer-link');

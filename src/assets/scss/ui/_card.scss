@@ -10,6 +10,7 @@ $card-shadow: 0 rem(2px) rem(4px) $gray-light-1;
 
 .card {
   width: 100%;
+  max-width: rem(300px);
   font-size: $card-fontsize;
   background-color: $card-background;
   border: 1px solid $card-border;
@@ -17,9 +18,7 @@ $card-shadow: 0 rem(2px) rem(4px) $gray-light-1;
   box-shadow: $card-shadow;
   padding: 0;
   margin: rem(16px) auto;
-  @include bp-sm {
-    max-width: rem(300px);
-  }
+  //@include transition(all, .35s, ease-in-out);
 }
 
 .card-blur {
@@ -74,9 +73,17 @@ $card-shadow: 0 rem(2px) rem(4px) $gray-light-1;
 }
 
 .card-header {
+  position: relative;
   text-align: right;
   //border-bottom: 1px solid $gray-light-1;
   padding: rem(8px);
+  strong {
+    color: $gray-dark-1;
+  }
+}
+
+.card-header-label {
+  @include v-centerer(absolute, auto, rem(8px));
 }
 
 .card-main {

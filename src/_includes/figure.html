@@ -1,4 +1,4 @@
-<figure class="fig{% if include.align == 'right' %} fig-rgt{% else %} fig-lft{% endif %}{% if include.size == 'extra-small' %} fig-xs{% else if include.size == 'small' %} fig-sm{% else %} fig-lg{% endif %}">
+<figure class="fig{% if include.align == 'center' %} fig-cntr{% endif %}{% if include.align == 'right' %} fig-rgt{% endif %}{% if include.align == 'left' %} fig-lft{% endif %}{% if include.size == 'extra-small' %} fig-xs{% endif %}{% if include.size == 'small' %} fig-sm{% endif %}{% if include.size == 'large' %} fig-lg{% endif %}">
 	{% if include.externalUrl %}<a{% if include.class %} class="{{ include.class }}"{% endif %} href="{{ include.externalUrl }}" target="_blank">{% endif %}
 		<img class="fig-img" src="{{ include.src }}" alt="{{ include.alt }}" title="{{ include.alt }}">
 	{% if include.externalUrl %}</a>{% endif %}
