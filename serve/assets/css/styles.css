@@ -911,27 +911,33 @@ iframe[class*="embedly-card"] {
   .twitter a:hover svg path {
     fill: #fafafa; }
 
-.bitbucket svg path {
-  fill: #3b7fc4; }
-.bitbucket a:hover {
-  background-color: #3b7fc4;
-  border-color: #3b7fc4; }
-  .bitbucket a:hover svg path {
-    fill: #fafafa; }
-
+/*
+.bitbucket {
+  svg path {
+    fill: $bitbucket;
+  }
+  a:hover {
+    background-color: $bitbucket;
+    border-color: $bitbucket;
+    svg path {
+      fill: $white;
+    }
+  }
+}
+*/
 .codepen a:hover {
   border-color: #fafafa; }
 .codepen svg path {
   fill: #fafafa; }
 
-/*
-.social .instagram {
-  a:hover {
-    background-color: lighten($instagram, 10%);
-    border-color: $instagram;
-  }
-}
-*/
+.social .instagram svg path {
+  fill: #3f729b; }
+.social .instagram a:hover {
+  background-color: #548cb9;
+  border-color: #3f729b; }
+  .social .instagram a:hover svg path {
+    fill: #fafafa; }
+
 .spotify svg path {
   fill: #32cd64; }
 .spotify a:hover {
@@ -948,14 +954,20 @@ iframe[class*="embedly-card"] {
   .googleplus a:hover svg path {
     fill: #fafafa; }
 
-.slack svg path {
-  fill: #56b68b; }
-.slack a:hover {
-  background-color: #56b68b;
-  border-color: #56b68b; }
-  .slack a:hover svg path {
-    fill: #fafafa; }
-
+/*
+.slack {
+  svg path {
+    fill: $slack;
+  }
+  a:hover {
+    background-color: $slack;
+    border-color: $slack;
+    svg path {
+      fill: $white;
+    }
+  }
+}
+*/
 .airbnb svg path {
   fill: #ff5a60; }
 .airbnb a:hover {
@@ -964,13 +976,20 @@ iframe[class*="embedly-card"] {
   .airbnb a:hover svg path {
     fill: #fafafa; }
 
-.email svg path, .rss svg path {
-  fill: #747a82; }
-.email a:hover, .rss a:hover {
-  border-color: #bababa; }
-  .email a:hover svg path, .rss a:hover svg path {
-    fill: #bababa; }
-
+/*
+.email,
+.rss {
+  svg path {
+    fill: $gray-dark-1;
+  }
+  a:hover {
+    border-color: $gray-light-5;
+    svg path {
+      fill: $gray-light-5;
+    }
+  }
+}
+*/
 /*
 .social a:hover .icn svg path {
   fill: $white;

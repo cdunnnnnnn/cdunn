@@ -267,11 +267,12 @@ var disqus_shortname = 'cdunn';
   var logo = document.querySelector('[data-js="logo"]');
   var smLogo = document.querySelector('[data-js="logo-sm"]');
   var socialGithub = document.querySelector('[data-js="github"]');
+  var socialInstagram = document.querySelector('[data-js="instagram"]');
   var socialTwitter = document.querySelector('[data-js="twitter"]');
   var socialCodepen = document.querySelector('[data-js="codepen"]');
   var socialSpotify = document.querySelector('[data-js="spotify"]');
-  var socialBitbucket = document.querySelector('[data-js="bitbucket"]');
-  var socialSlack = document.querySelector('[data-js="slack"]');
+  //var socialBitbucket = document.querySelector('[data-js="bitbucket"]');
+  //var socialSlack = document.querySelector('[data-js="slack"]');
   var socialAirbnb = document.querySelector('[data-js="airbnb"]');
   //var socialRSS = document.querySelector('[data-js="rss"]');
   var footerNav = document.querySelectorAll('.footer-nav-item');
@@ -294,6 +295,9 @@ var disqus_shortname = 'cdunn';
   addListener(socialGithub, 'click', function() {
     ga('send', 'event', 'button', 'click', 'social-github');
   });
+  addListener(socialInstagram, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'social-bitbucket');
+  });
   addListener(socialTwitter, 'click', function() {
     ga('send', 'event', 'button', 'click', 'social-twitter');
   });
@@ -302,12 +306,6 @@ var disqus_shortname = 'cdunn';
   });
   addListener(socialSpotify, 'click', function() {
     ga('send', 'event', 'button', 'click', 'social-spotify');
-  });
-  addListener(socialBitbucket, 'click', function() {
-    ga('send', 'event', 'button', 'click', 'social-bitbucket');
-  });
-  addListener(socialSlack, 'click', function() {
-    ga('send', 'event', 'button', 'click', 'social-slack');
   });
   addListener(socialAirbnb, 'click', function() {
     ga('send', 'event', 'button', 'click', 'social-airbnb');

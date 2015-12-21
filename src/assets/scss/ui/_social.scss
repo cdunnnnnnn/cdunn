@@ -54,6 +54,7 @@
     }
   }
 }
+/*
 .bitbucket {
   svg path {
     fill: $bitbucket;
@@ -66,6 +67,7 @@
     }
   }
 }
+*/
 .codepen {
   a:hover {
     //background-color: lighten($codepen, 10%);
@@ -75,14 +77,18 @@
     fill: $white;
   }
 }
-/*
 .social .instagram {
+  svg path {
+    fill: $instagram;
+  }
   a:hover {
     background-color: lighten($instagram, 10%);
     border-color: $instagram;
+    svg path {
+      fill: $white;
+    }
   }
 }
-*/
 .spotify {
   svg path {
     fill: $spotify;
@@ -107,6 +113,7 @@
     }
   }
 }
+/*
 .slack {
   svg path {
     fill: $slack;
@@ -119,6 +126,7 @@
     }
   }
 }
+*/
 .airbnb {
   svg path {
     fill: $airbnb;
@@ -131,6 +139,7 @@
     }
   }
 }
+/*
 .email,
 .rss {
   svg path {
@@ -143,6 +152,7 @@
     }
   }
 }
+*/
 
 /*
 .social a:hover .icn svg path {
