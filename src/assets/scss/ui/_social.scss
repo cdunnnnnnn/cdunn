@@ -82,7 +82,7 @@
     fill: $instagram;
   }
   a:hover {
-    background-color: lighten($instagram, 10%);
+    background-color: $instagram;
     border-color: $instagram;
     svg path {
       fill: $white;
