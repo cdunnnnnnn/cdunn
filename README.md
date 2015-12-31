@@ -2,8 +2,9 @@
 
 ## ToDo
 
-- Photo pagination
-- Media page (instagram, spotify)
+- ~~Photo pagination~~
+- ~~Media page (instagram, spotify)~~
 - Search
 - Pattern library
 - Fix block rendering styles/scripts
+- Fix light avatar
