@@ -89,6 +89,18 @@
     }
   }
 }
+.social .dribbble {
+  svg path {
+    fill: $dribbble;
+  }
+  a:hover {
+    background-color: $dribbble;
+    border-color: $dribbble;
+    svg path {
+      fill: $white;
+    }
+  }
+}
 .spotify {
   svg path {
     fill: $spotify;

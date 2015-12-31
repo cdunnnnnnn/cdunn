@@ -270,6 +270,7 @@ var disqus_shortname = 'cdunn';
   var socialInstagram = document.querySelector('[data-js="instagram"]');
   var socialTwitter = document.querySelector('[data-js="twitter"]');
   var socialCodepen = document.querySelector('[data-js="codepen"]');
+  var socialDribbble = document.querySelector('[data-js="dribbble"]');
   var socialSpotify = document.querySelector('[data-js="spotify"]');
   //var socialBitbucket = document.querySelector('[data-js="bitbucket"]');
   //var socialSlack = document.querySelector('[data-js="slack"]');
@@ -303,6 +304,9 @@ var disqus_shortname = 'cdunn';
   });
   addListener(socialCodepen, 'click', function() {
     ga('send', 'event', 'button', 'click', 'social-codepen');
+  });
+  addListener(socialDribbble, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'dribbble-spotify');
   });
   addListener(socialSpotify, 'click', function() {
     ga('send', 'event', 'button', 'click', 'social-spotify');

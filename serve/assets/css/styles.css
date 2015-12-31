@@ -938,6 +938,14 @@ iframe[class*="embedly-card"] {
   .social .instagram a:hover svg path {
     fill: #fafafa; }
 
+.social .dribbble svg path {
+  fill: #ea4c89; }
+.social .dribbble a:hover {
+  background-color: #ea4c89;
+  border-color: #ea4c89; }
+  .social .dribbble a:hover svg path {
+    fill: #fafafa; }
+
 .spotify svg path {
   fill: #32cd64; }
 .spotify a:hover {
