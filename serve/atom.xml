@@ -4,7 +4,7 @@
  <title>Christopher Dunn</title>
  <link href="http://cdunn.io/atom.xml" rel="self"/>
  <link href="http://cdunn.io/"/>
- <updated>2015-12-30T10:59:35-06:00</updated>
+ <updated>2016-01-01T22:20:13-06:00</updated>
  <id>http://cdunn.io</id>
  <author>
    <name>Christopher Dunn</name>
@@ -40,7 +40,7 @@
  
  <entry>
    <title>communityApp</title>
-   <link href="http://cdunn.io/work/2015/09/19/communityapp/"/>
+   <link href="http://cdunn.io/work/2015/09/19/communityApp/"/>
    <updated>2015-09-19T00:00:00-05:00</updated>
    <id>http://cdunn.io/work/2015/09/19/communityApp</id>
    <content type="html">&lt;p&gt;We wanted to build an app using the latest in client side solutions to give our readers an immersive experience when navigating our award &amp;amp; recognition programs. On the backend I developed a JSON api on top of our serverside CMS, then used &lt;a href=&quot;https://angularjs.org/&quot;&gt;Angular.js&lt;/a&gt; on the frontend to iterate over the data. Users are now able to apply filters to the list, visit detailed bio views and quickly switch between different program/year views.&lt;/p&gt;
