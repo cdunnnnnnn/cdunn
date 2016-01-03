@@ -4,7 +4,7 @@
  <title>Christopher Dunn</title>
  <link href="http://cdunn.io/atom.xml" rel="self"/>
  <link href="http://cdunn.io/"/>
- <updated>2016-01-01T22:22:49-06:00</updated>
+ <updated>2016-01-03T12:22:15-06:00</updated>
  <id>http://cdunn.io</id>
  <author>
    <name>Christopher Dunn</name>
@@ -30,11 +30,11 @@
    <id>http://cdunn.io/blog/2015/09/22/button-styles</id>
    <content type="html">&lt;p&gt;This one made it to No. 67 on Coedpen&amp;rsquo;s &lt;a href=&quot;http://codepen.io/2014/popular/4/&quot;&gt;Most Hearted Pens of 2014&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p data-height=&quot;505&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;FLsvf&quot; data-default-tab=&quot;result&quot; data-user=&quot;pxdunn&quot; class=&#39;codepen&#39;&gt;See the Pen &lt;a href=&#39;http://codepen.io/pxdunn/pen/FLsvf/&#39;&gt;Button Styles&lt;/a&gt; by Christopher Dunn (&lt;a href=&#39;http://codepen.io/pxdunn&#39;&gt;@pxdunn&lt;/a&gt;) on &lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p data-height=&quot;505&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;FLsvf&quot; data-default-tab=&quot;result&quot; data-user=&quot;cdunnnnnnn&quot; class=&#39;codepen&#39;&gt;See the Pen &lt;a href=&#39;http://codepen.io/cdunnnnnnn/pen/FLsvf/&#39;&gt;Button Styles&lt;/a&gt; by Christopher Dunn (&lt;a href=&#39;http://codepen.io/cdunnnnnnn&#39;&gt;@cdunnnnnnn&lt;/a&gt;) on &lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 
 &lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;a class=&quot;btn btn-sz-md btn-radius&quot; href=&quot;http://codepen.io/pxdunn/pen/FLsvf&quot; target=&quot;_blank&quot;&gt;Visit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;btn btn-sz-md btn-radius&quot; href=&quot;http://codepen.io/cdunnnnnnn/pen/FLsvf&quot; target=&quot;_blank&quot;&gt;Visit&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -92,7 +92,7 @@
 
 &lt;p&gt;This has forever changed the way I code. I can&amp;rsquo;t even imagine building another site without &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp.js&lt;/a&gt;, no matter how large or small. I seriously love this tool. You can automate any task imaginable and maintain clean, solid source code while simultaneously producing highly optimized production code.&lt;/p&gt;
 
-&lt;p&gt;I use a &lt;code&gt;gulpfile.js&lt;/code&gt; similar to &lt;a href=&quot;https://gist.github.com/pxdunn/bb4604f2c20cee19c16b&quot;&gt;this&lt;/a&gt; for a static sites.&lt;/p&gt;
+&lt;p&gt;I use a &lt;code&gt;gulpfile.js&lt;/code&gt; similar to &lt;a href=&quot;https://gist.github.com/cdunnnnnnn/bb4604f2c20cee19c16b&quot;&gt;this&lt;/a&gt; for a static sites.&lt;/p&gt;
 
 &lt;h3 id=&quot;bower&quot;&gt;Bower&lt;/h3&gt;
 

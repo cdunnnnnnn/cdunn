@@ -8,7 +8,7 @@ location: true
 
 ### Hi there, I'm Chris.
 
-{% include figure.html src='/assets/img/cdunn.jpg' alt='@pxdunn' align='right' size='small' %}
+{% include figure.html src='/assets/img/cdunn.jpg' alt='@cdunnnnnnn' align='right' size='small' %}
 
 I live/work in ~~&nbsp;Chicago, IL&nbsp;~~ Milwaukee, WI and code for the [Crain Communications](http://www.crain.com) CE1 agile product team. Most of my days are spent hanging out with my sweet <span class="icn icn-sz-sm icn-heart" title="heart">{% include _icons/heart.html %}</span>, {% include tooltip.html title='April Lily' img='/assets/img/aprilily484.jpg' %} and our pup we named {% include tooltip.html title='Wally' img='/assets/img/wally.jpg' %}<span style="margin-left:-6px;">.</span>
 

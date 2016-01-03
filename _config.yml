@@ -16,7 +16,7 @@ author:
   name: Christopher Dunn
   email: hello@cdunn.io
   bio: I build internet.
-  twitter: pxdunn
+  twitter: cdunnnnnnn
 
 # general setting for Jekyll
 googleAnalytics: UA-50747921-1
@@ -51,7 +51,7 @@ defaults:
       type: posts
     values:
       layout: post
-      author: "@pxdunn"
+      author: "@cdunnnnnnn"
       is_post: true
 
 # Gems
