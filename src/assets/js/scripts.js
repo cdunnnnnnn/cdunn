@@ -49,6 +49,22 @@ colorsArray.sort(function() {
 
 document.getElementsByTagName('body')[0].classList.add('color-' + colorsArray[0].class);
 
+function favicon(color) {
+  var favicon = document.querySelector('link[rel="shortcut icon"]');
+
+  if (!favicon) {
+    favicon = document.createElement('link');
+    favicon.setAttribute('rel', 'shortcut icon');
+    var head = document.querySelector('head');
+    head.appendChild(favicon);
+  }
+
+  favicon.setAttribute('type', 'image/png');
+  favicon.setAttribute('href', '/assets/img/touch/icon-' + color + '.png');
+}
+
+favicon(colorsArray[0].class);
+
 var post = document.body.className.match(/(\bcategories-[Bb]log\b|\bcategories-[Ww]ork\b)/g);
 var randomNum = Math.floor(Math.random() * bgImgArry.length);
 var imgSrc = bgImgArry.splice(randomNum, 1);
@@ -274,7 +290,7 @@ var disqus_shortname = 'cdunn';
   var socialSpotify = document.querySelector('[data-js="spotify"]');
   //var socialBitbucket = document.querySelector('[data-js="bitbucket"]');
   //var socialSlack = document.querySelector('[data-js="slack"]');
-  var socialAirbnb = document.querySelector('[data-js="airbnb"]');
+  //var socialAirbnb = document.querySelector('[data-js="airbnb"]');
   //var socialRSS = document.querySelector('[data-js="rss"]');
   var footerNav = document.querySelectorAll('.footer-nav-item');
   var menuEmail = document.querySelector('[data-js="menu-email"]');
@@ -310,9 +326,6 @@ var disqus_shortname = 'cdunn';
   });
   addListener(socialSpotify, 'click', function() {
     ga('send', 'event', 'button', 'click', 'social-spotify');
-  });
-  addListener(socialAirbnb, 'click', function() {
-    ga('send', 'event', 'button', 'click', 'social-airbnb');
   });
   addListener(footerNav, 'click', function() {
     ga('send', 'event', 'link', 'click', 'footer-link');
