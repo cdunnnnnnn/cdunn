@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-subtitle: Just another Midwestern-coder-dude
+subtitle: Midwestern-coder-dude-transplant
 image: /assets/img/cdunn.jpg
 location: true
 ---
@@ -10,19 +10,19 @@ location: true
 
 {% include figure.html src='/assets/img/cdunn.jpg' alt='@cdunnnnnnn' align='right' size='small' %}
 
-I live/work in ~~&nbsp;Chicago, IL&nbsp;~~ Milwaukee, WI and code for the [Crain Communications](http://www.crain.com) CE1 agile product team. Most of my days are spent hanging out with my sweet <span class="icn icn-sz-sm icn-heart" title="heart">{% include _icons/heart.html %}</span>, {% include tooltip.html title='April Lily' img='/assets/img/aprilily484.jpg' %} and our pup we named {% include tooltip.html title='Wally' img='/assets/img/wally.jpg' %}<span style="margin-left:-6px;">.</span>
+I live/work in&nbsp;~~&nbsp;Chicago, IL&nbsp;~~&nbsp;&nbsp;~~&nbsp;Milwaukee, WI&nbsp;&nbsp;~~&nbsp;St. Pete, FL and code for [Crain Communications](http://www.crain.com) on the CE1 agile product team. I spend most my time building internet, hanging with my pup named Gumbo and exploring the great city I live in. :sunny:
 
 <div class="cf"></div>
 
-{% include figure.html src='/assets/img/about-02.jpg' alt='Apes and I' align='left' size='small' %}
+{% include figure.html src='/assets/img/about-02.jpg' alt='Gumbo pup' align='left' size='small' %}
 
 #### Stack.
 
-HTML/CSS &bull; Sass &bull; LESS &bull; JS &bull; jQuery &bull; Markdown &bull; PHP &bull; CLI &bull; Atom.io &bull; Adobe CC &bull; GitHub &bull; AngularJS &bull; WordPress &bull; Node.js &bull; Gulp.js &bull; Bower &bull; Yeoman
+HTML/CSS &bull; Sass &bull; LESS &bull; JS &bull; jQuery &bull; Git &bull; CLI &bull; PHP &bull; Atom.io &bull; Adobe CC &bull; AngularJS &bull; WordPress &bull; Node.js &bull; Gulp.js &bull; Bower &bull; Yeoman
 
 <div class="cf"></div>
 
-{% include figure.html src='/assets/img/about-01.jpg' alt='Drivin\' w/ Baby Wallers' align='right' size='small' %}
+{% include figure.html src='/assets/img/about-03.jpg' alt='' align='right' size='small' %}
 
 #### Get In Touch.
 

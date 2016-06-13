@@ -4,7 +4,8 @@
 
 - ~~Photo pagination~~
 - ~~Media page (instagram, spotify)~~
+- ~~Fix light avatar~~
 - Search
 - Pattern library
 - Fix block rendering styles/scripts
-- Fix light avatar
+- Get a Crain logo svg

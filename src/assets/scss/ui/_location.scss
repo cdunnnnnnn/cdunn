@@ -30,14 +30,14 @@
   }
 }
 
-.location-state svg {
+.location-state img {
   opacity: .125;
 }
 
 .location-pin {
   position: absolute;
-  right: 16%;
-  bottom: 17.5%;
+  right: 30%;
+  bottom: 46.5%;
   display: inline-block;
   width: rem(18px);
   height: rem(18px);
@@ -47,21 +47,21 @@
   border-width: 4px;
   border-style: solid;
   border-radius: 50%;
-  animation: marker 2s infinite;
+  @include animation(marker 2s infinite);
   @include bp-sm {
-    right: 17%;
-    bottom: 17.5%;
+    right: 30%;
+    bottom: 45%;
   }
   @include bp-md {
-    right: 18%;
-    bottom: 18.5%;
+    right: 31%;
+    bottom: 46%;
   }
   @include bp-lg {
-    right: 19%;
-    bottom: 19.5%;
+    right: 32%;
+    bottom: 47%;
   }
   @include bp-xl {
-    right: 20%;
-    bottom: 20.5%;
+    right: 33%;
+    bottom: 48%;
   }
 }

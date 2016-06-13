@@ -1,9 +1,9 @@
 <!-- JS -->
-<!-- build:js /assets/js/scripts.min.js -->
+<!-- inject:js -->
+<script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/scripts.js"></script>
-<!-- endbuild -->
+<!-- endinject -->
 {% if page.title == 'Photos' %}
-<script src="/assets/js/vendor/instafeed.min.js"></script>
 <script>
   (function() {
     // Instagram
@@ -12,8 +12,10 @@
     var feed = new Instafeed({
         get: 'user',
         userId: '2215746013',
-        clientId: '8df8587968f7463aaefc80da2295fede',
+        clientId: 'e31f760b750145c1b55090b1b7c66986',
+        accessToken: '2215746013.1677ed0.8c46a088a3c04331b417b2fb7c549582',
         resolution: 'standard_resolution',
+        useHttp: 'http://',
         sortBy: 'most-recent',
         limit: 12,
         template: '<div class="col-1 col-md-1-2 col-lg-1-3">' +

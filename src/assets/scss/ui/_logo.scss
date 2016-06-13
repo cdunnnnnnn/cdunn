@@ -4,6 +4,12 @@
   vertical-align: middle;
   backface-visibility: hidden;
   opacity: .85;
+  @include transition(opacity, .25s, ease-in-out);
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 1;
 }
 
 .logo > a {
@@ -30,6 +36,11 @@
   padding-top: rem(12px);
 }
 
+.logo a svg > * {
+  @include transition(all, .25s, ease-in-out);
+}
+
+/*
 .logo.hovered {
   opacity: 1;
 }
@@ -47,6 +58,7 @@
   width: rem(80px);
   height: rem(80px);
 }
+*/
 
 .cdunn {
   position: relative;
@@ -62,6 +74,7 @@
   //@include transition(all, .25s, ease-in-out);
 }
 
+/*
 .logo .animate .clip {
   @include animation('easeInElastic .35s forwards');
 }
@@ -84,6 +97,7 @@
 .logo > a:hover .cdunn-path {
   fill: $white;
 }
+*/
 
 .logo-text {
   display: inline-block;

@@ -2,8 +2,8 @@
 
 var bgImgArry = [
   '/assets/img/bg-01.jpg',
-  '/assets/img/bg-02.jpg'
-  //'/assets/img/bg-03.jpg'
+  '/assets/img/bg-02.jpg',
+  '/assets/img/bg-03.jpg'
   //'/assets/img/bg-05.jpg',
   //'/assets/img/bg-06.jpg',
   //'/assets/img/bg-07.jpg',
@@ -110,6 +110,7 @@ function navToggle(el) {
   });
 };
 
+/*
 function logoAnimate(el, bg) {
   var element = document.querySelector(el);
   var sibling = document.querySelector(bg);
@@ -127,6 +128,7 @@ function logoAnimate(el, bg) {
     parent.classList.remove('hovered');
   }, false);
 };
+*/
 
 function locationColors(el, nEl) {
   var element = document.querySelector(el);
@@ -160,7 +162,7 @@ function postHover(el) {
 function init() {
   fadeIn('body');
   navToggle('[data-js="sidebar-toggle"]');
-  logoAnimate('[data-js="logo"]', '[data-js="logo-clip"]');
+  //logoAnimate('[data-js="logo"]', '[data-js="logo-clip"]');
   locationColors('[data-js="location"]', '[data-js="pin"]');
   postHover('[data-js="post"]')
   fitVids('[data-js="fitvid"]');

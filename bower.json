@@ -1,7 +1,20 @@
 {
-  "name": "cdunn",
-  "version": "0.0.1",
-  "dependencies": {
-    "vibrant": "^1.0.0"
+  "name": "cdunn.io",
+  "version": "0.0.0",
+  "authors": [
+    "Christopher Dunn <hello@cdunn.io>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "instafeed.js": "^1.4.1",
+    "prism": "^1.5.0"
   }
 }

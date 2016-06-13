@@ -56,7 +56,7 @@ a {
   .tooltip {
     color: $primary;
   }
-  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+  .logo a:hover svg > *, .logo > a:focus svg > * {
     fill: $primary;
   }
 }
@@ -66,7 +66,7 @@ a {
   .tooltip {
     color: $secondary;
   }
-  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+  .logo a:hover svg > *, .logo > a:focus svg > * {
     fill: $secondary;
   }
 }
@@ -76,7 +76,7 @@ a {
   .tooltip {
     color: $tertiary;
   }
-  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+  .logo a:hover svg > *, .logo > a:focus svg > * {
     fill: $tertiary;
   }
 }
@@ -86,7 +86,7 @@ a {
   .tooltip {
     color: $quaternary;
   }
-  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+  .logo a:hover svg > *, .logo > a:focus svg > * {
     fill: $quaternary;
   }
 }
@@ -96,7 +96,7 @@ a {
   .tooltip {
     color: $quinary;
   }
-  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+  .logo a:hover svg > *, .logo > a:focus svg > * {
     fill: $quinary;
   }
 }
@@ -106,7 +106,7 @@ a {
   .tooltip {
     color: $senary;
   }
-  .logo-sm a:hover svg > *, .logo-sm > a:focus svg > * {
+  .logo a:hover svg > *, .logo > a:focus svg > * {
     fill: $senary;
   }
 }

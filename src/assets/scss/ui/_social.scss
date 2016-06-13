@@ -79,11 +79,42 @@
 }
 .social .instagram {
   svg path {
-    fill: $instagram;
+    fill: $white;
+  }
+  a {
+    position: relative;
+    border-color: transparent;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(201deg,rgba(254, 116, 45, 0.05)55%, rgba(255, 177, 63, 0.96)78%, #FFFFFF) 76%,linear-gradient(128deg, rgb(42, 77, 249) , rgba(72, 61, 234, 0.29), rgba(136, 41, 199, 0.3)), linear-gradient(225deg, #D72188, #F91863, #FF3238);
+      border-radius: 50%;
+      opacity: 0;
+      z-index: 0;
+      @include transition(opacity, .2s, ease-in-out);
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url("../img/instagram.svg") no-repeat center center;
+      background-size: 100%;
+      opacity: 0;
+      @include centerer(absolute);
+    }
   }
   a:hover {
-    background-color: $instagram;
-    border-color: $instagram;
+    border-color: $white;
+    &:before,
+    &:after {
+      opacity: 1;
+    }
     svg path {
       fill: $white;
     }
@@ -189,7 +220,7 @@
   @include transition(all, .2s, ease-in-out);
   &:hover, &:focus {
     text-decoration: none;
-    color: lighten($instagram, 15%) !important;
-    border-color: lighten($instagram, 15%) !important;
+    color: $white !important;
+    background-color: $instagram !important;
   }
 }
