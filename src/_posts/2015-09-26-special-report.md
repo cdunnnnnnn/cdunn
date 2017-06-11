@@ -8,6 +8,7 @@ image: /assets/img/posts/20150926-01.jpg
 logo: _logo/special-report.html
 logoWidth: 300px
 logoHeight: 56px
+logoColor: light
 externalUrl: http://www.modernhealthcare.com/section/learning-to-be-lean/
 ---
 

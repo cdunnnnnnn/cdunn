@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-subtitle: Midwestern-coder-dude-transplant
+subtitle: ui designer &amp; developer
 image: /assets/img/cdunn.jpg
 location: true
 ---
@@ -10,7 +10,7 @@ location: true
 
 {% include figure.html src='/assets/img/cdunn.jpg' alt='@cdunnnnnnn' align='right' size='small' %}
 
-I live/work in&nbsp;~~&nbsp;Chicago, IL&nbsp;~~&nbsp;&nbsp;~~&nbsp;Milwaukee, WI&nbsp;&nbsp;~~&nbsp;St. Pete, FL and code for [Crain Communications](http://www.crain.com) on the CE1 agile product team. I spend most my time building internet, hanging with my pup named Gumbo and exploring the great city I live in. :sunny:
+I live/work in&nbsp;~~&nbsp;Chicago, IL&nbsp;~~&nbsp;&nbsp;~~&nbsp;Milwaukee, WI&nbsp;&nbsp;~~&nbsp;St. Pete, FL and&nbsp;~~&nbsp;code for [Crain Communications](http://www.crain.com) on the CE1 agile product team&nbsp;&nbsp;~~&nbsp; design/code as a full-time freelancer. I spend most my time building internet, enjoying life with my love Silvia and our two pups named Tučko &amp; Gumbo. :sunny:
 
 <div class="cf"></div>
 
@@ -18,7 +18,7 @@ I live/work in&nbsp;~~&nbsp;Chicago, IL&nbsp;~~&nbsp;&nbsp;~~&nbsp;Milwaukee, WI
 
 #### Stack.
 
-HTML/CSS &bull; Sass &bull; LESS &bull; JS &bull; jQuery &bull; Git &bull; CLI &bull; PHP &bull; Atom.io &bull; Adobe CC &bull; AngularJS &bull; WordPress &bull; Node.js &bull; Gulp.js &bull; Bower &bull; Yeoman
+HTML/CSS &bull; Sass &bull; LESS &bull; JS &bull; jQuery &bull; Git &bull; CLI &bull; PHP &bull; Atom.io &bull; Adobe CC &bull; Angular &bull; Typescript/Babel &bull; Webpack &bull; WordPress &bull; Node.js &bull; Gulp.js &bull; Bower &bull; Yeoman
 
 <div class="cf"></div>
 

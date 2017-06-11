@@ -2,8 +2,8 @@
 
 var bgImgArry = [
   '/assets/img/bg-01.jpg',
-  '/assets/img/bg-02.jpg',
-  '/assets/img/bg-03.jpg'
+  '/assets/img/bg-02.jpg'
+  // '/assets/img/bg-03.jpg'
   //'/assets/img/bg-05.jpg',
   //'/assets/img/bg-06.jpg',
   //'/assets/img/bg-07.jpg',

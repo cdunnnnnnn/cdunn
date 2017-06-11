@@ -6,7 +6,7 @@ image: /assets/img/cdunn.jpg
 location: true
 ---
 
-<div class="row" id="instafeed"></div>
+<div id="instafeed"></div>
 
 <div class="cf"></div>
 
