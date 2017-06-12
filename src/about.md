@@ -10,7 +10,7 @@ location: true
 
 {% include figure.html src='/assets/img/cdunn.jpg' alt='@cdunnnnnnn' align='right' size='small' %}
 
-I live/work in&nbsp;~~&nbsp;Chicago, IL&nbsp;~~&nbsp;&nbsp;~~&nbsp;Milwaukee, WI&nbsp;&nbsp;~~&nbsp;St. Pete, FL and&nbsp;~~&nbsp;code for [Crain Communications](http://www.crain.com) on the CE1 agile product team&nbsp;&nbsp;~~&nbsp; design/code as a full-time freelancer. I spend most my time building internet, enjoying life with my love Silvia and our two pups named Tučko &amp; Gumbo. :sunny:
+I live/work in&nbsp;~~&nbsp;Chicago, IL&nbsp;~~&nbsp;&nbsp;~~&nbsp;Milwaukee, WI&nbsp;&nbsp;~~&nbsp;St. Pete, FL and&nbsp;~~&nbsp;code for [Crain Communications](http://www.crain.com) on the CE1 agile product team&nbsp;&nbsp;~~&nbsp; design/code as a full-time freelancer. I spend most my time building internet, enjoying life with my love, Silvia and our two pups named Tučko &amp; Gumbo. :sunny:
 
 <div class="cf"></div>
 
