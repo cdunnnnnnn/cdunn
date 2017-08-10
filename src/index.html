@@ -10,16 +10,19 @@ image: /assets/img/cdunn.jpg
 
 {% for post in paginator.posts %}
 {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-{% if forloop.first == true or thecycle == 'even' %}
+<!-- { % if forloop.first == true or thecycle == 'even' % } -->
+{% if thecycle == 'odd' %}
   <div class="posts row">
 {% endif %}
-  {% if forloop.first == true %}
+  <!-- { % if forloop.first == true % }
     <div class="col-1">
-  {% else %}
+  { % else % }
     <div class="col-1 col-md-1-2">
-  {% endif %}
+  { % endif % } -->
+    <div class="col-1 col-md-1-2">
       <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
-        <div class="post-hero{% if forloop.first == true %} post-featured-hero{% endif %}" href="{{ post.url }}"{% if post.image %} style="{% if post.logo %}background-color:#{{ post.color }};{% endif %}background-image:url({{ post.image }})"{% endif %}>
+        <!-- <div class="post-hero{% if forloop.first == true %} post-featured-hero{% endif %}" href="{{ post.url }}"{% if post.image %} style="{% if post.logo %}background-color:#{{ post.color }};{% endif %}background-image:url({{ post.image }})"{% endif %}> -->
+        <div class="post-hero" href="{{ post.url }}"{% if post.image %} style="{% if post.logo %}background-color:#{{ post.color }};{% endif %}background-image:url({{ post.image }})"{% endif %}>
           <div class="post-hero-inner">
             <span hidden>
               <span itemprop="name">{{ site.author.name }}</span>
@@ -38,7 +41,8 @@ image: /assets/img/cdunn.jpg
         </div>
       </div>
     </div>
-{% if forloop.first == true or thecycle == 'odd' %}
+<!-- { % if forloop.first == true or thecycle == 'odd' % } -->
+{% if thecycle == 'even' %}
   </div>
 {% endif %}
 {% endfor %}
