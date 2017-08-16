@@ -1,9 +1,9 @@
 /* jshint strict: true */
 
 var bgImgArry = [
-  '/assets/img/bg-01.jpg',
-  '/assets/img/bg-02.jpg'
-  // '/assets/img/bg-03.jpg'
+  '/assets/img/bg-01.jpg'
+  //'/assets/img/bg-02.jpg',
+  //'/assets/img/bg-03.jpg'
   //'/assets/img/bg-05.jpg',
   //'/assets/img/bg-06.jpg',
   //'/assets/img/bg-07.jpg',
@@ -290,6 +290,7 @@ var disqus_shortname = 'cdunn';
   var socialCodepen = document.querySelector('[data-js="codepen"]');
   var socialDribbble = document.querySelector('[data-js="dribbble"]');
   var socialSpotify = document.querySelector('[data-js="spotify"]');
+  var socialSpotify = document.querySelector('[data-js="linkedin"]');
   //var socialBitbucket = document.querySelector('[data-js="bitbucket"]');
   //var socialSlack = document.querySelector('[data-js="slack"]');
   //var socialAirbnb = document.querySelector('[data-js="airbnb"]');
@@ -324,7 +325,10 @@ var disqus_shortname = 'cdunn';
     ga('send', 'event', 'button', 'click', 'social-codepen');
   });
   addListener(socialDribbble, 'click', function() {
-    ga('send', 'event', 'button', 'click', 'dribbble-spotify');
+    ga('send', 'event', 'button', 'click', 'social-dribbble');
+  });
+  addListener(socialLinkedin, 'click', function() {
+    ga('send', 'event', 'button', 'click', 'social-linkedin');
   });
   addListener(socialSpotify, 'click', function() {
     ga('send', 'event', 'button', 'click', 'social-spotify');

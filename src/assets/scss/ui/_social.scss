@@ -182,6 +182,18 @@
     }
   }
 }
+.linkedin {
+  svg path {
+    fill: $white;
+  }
+  a:hover {
+    background-color: $linkedin;
+    border-color: $linkedin;
+    svg path {
+      fill: $white;
+    }
+  }
+}
 /*
 .email,
 .rss {
