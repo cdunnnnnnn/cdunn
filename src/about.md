@@ -6,7 +6,7 @@ image: /assets/img/cdunn.jpg
 location: true
 ---
 
-### Hi there, I'm Chris.
+### Hello, I'm Chris.
 
 {% include figure.html src='/assets/img/cdunn.jpg' alt='@cdunnnnnnn' align='right' size='small' %}
 
