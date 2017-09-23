@@ -235,4 +235,11 @@
     color: $white !important;
     background-color: $instagram !important;
   }
+  &.instagram-load-more-disabled {
+    color: $white !important;
+    text-decoration: line-through !important;
+    background-color: $gray-light-2 !important;
+    border-color: $gray-light-2 !important;
+    cursor: not-allowed !important;
+  }
 }
