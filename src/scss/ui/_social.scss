@@ -1,0 +1,142 @@
+$twitter: #55acee;
+$linkedin: #0277b5;
+$dribbble: #ea4d89;
+$spotify: #31cd65;
+$github: #171515;
+$codepen: #000;
+
+.social > li > a {
+  @apply block w-full h-full bg-transparent border-solid rounded-full border-4 border-transparent transition-all duration-20 ease-in-out;
+}
+
+.github {
+  a:hover {
+    border-color: #fff;
+  }
+  svg path {
+    fill: #fff;
+  }
+}
+
+.twitter {
+  svg path {
+    fill: $twitter;
+  }
+  a:hover {
+    background-color: $twitter;
+    border-color: $twitter;
+    svg path {
+      fill: #fff;
+    }
+  }
+}
+
+.codepen {
+  a:hover {
+    border-color: #fff;
+  }
+  svg path {
+    fill: #fff;
+  }
+}
+
+.instagram {
+  svg path {
+    fill: #fff;
+  }
+  a {
+    position: relative;
+    border-color: transparent;
+    z-index: 1;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+            201deg,
+            rgba(254, 116, 45, 0.05) 55%,
+            rgba(255, 177, 63, 0.96) 78%,
+            #ffffff
+          )
+          76%,
+        linear-gradient(
+          128deg,
+          rgb(42, 77, 249),
+          rgba(72, 61, 234, 0.29),
+          rgba(136, 41, 199, 0.3)
+        ),
+        linear-gradient(225deg, #d72188, #f91863, #ff3238);
+      border-radius: 50%;
+      opacity: 0;
+      z-index: 0;
+      transition: opacity, 0.2s, ease-in-out;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url('../img/instagram.svg') no-repeat center center;
+      background-size: 100%;
+      opacity: 0;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+    }
+  }
+  a:hover {
+    border-color: #fff;
+    &:before,
+    &:after {
+      opacity: 1;
+    }
+    svg path {
+      fill: #fff;
+    }
+  }
+}
+
+.dribbble {
+  svg path {
+    fill: $dribbble;
+  }
+  a:hover {
+    background-color: $dribbble;
+    border-color: $dribbble;
+    svg path {
+      fill: #fff;
+    }
+  }
+}
+
+.spotify {
+  svg path {
+    fill: $spotify;
+  }
+  a:hover {
+    background-color: $spotify;
+    border-color: $spotify;
+    svg path {
+      fill: #fff;
+    }
+  }
+}
+
+.linkedin {
+  svg path {
+    fill: #fff;
+  }
+  a:hover {
+    background-color: $linkedin;
+    border-color: $linkedin;
+    svg path {
+      fill: #fff;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 module.exports = {
+  purge: ['./src/**/*.html', './src/**/*.js', './src/**/*.scss'],
   theme: {
     extend: {
       colors: {
@@ -13,6 +14,7 @@ module.exports = {
         linkedin: '#0277b5',
         dribbble: '#ea4d89',
         spotify: '#31cd65',
+        instagram: '#262626',
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],

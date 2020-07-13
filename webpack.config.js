@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg|eot|ttf|woff)$/,
-        use: ['file-loader', 'url-loader'],
+        use: ['file-loader'],
       },
     ],
   },
@@ -62,18 +62,18 @@ module.exports = {
     new OptimizeCssAssetsPlugin(),
     new HtmlWebPackPlugin({
       template: './src/index.html',
-      filename: './index.html',
+      filename: 'index.html',
     }),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
       proxy: 'http://localhost:8080/',
-      files: ['./dist/main-[hash].css', './tailwindcss.config.js']
+      files: ['./dist/main-[hash].css', './tailwindcss.config.js'],
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-      }
-    })
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      },
+    }),
   ],
 }

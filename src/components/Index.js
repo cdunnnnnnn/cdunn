@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+// import axios from 'axios'
 
-//import API from '../utils/API'
+// import API from '../utils/API'
 import Data from '../data/Data'
-//import Repo from './Repo'
+// import Repo from './Repo'
 import Project from './Project'
 
 function Index() {
   const [projects, setProjects] = useState([])
+  // const [repos, setRepos] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -23,14 +24,16 @@ function Index() {
     //   }
     // }
 
+    // fetchData()
     setProjects(Data)
     setIsLoading(false)
-  })
+  }, [projects])
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row flex-wrap">
-        {projects.map(project => (
+      <h2 className="text-4xl font-black pb-6 mb-0">Recent Projects</h2>
+      <div className="flex flex-col sm:flex-row flex-wrap -mx-3">
+        {projects.map((project) => (
           <Project key={project._id} project={project} />
         ))}
       </div>

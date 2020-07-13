@@ -1,0 +1,16 @@
+html,
+body {
+  @apply font-sans;
+}
+
+.main {
+  @apply flex-1 bg-blacker text-white;
+}
+
+.wrapper {
+  @apply relative flex flex-col;
+
+  @screen lg {
+    @apply h-screen overflow-hidden;
+  }
+}

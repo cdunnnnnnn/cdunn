@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 function Repo({ repo }) {
   return (
-    <div className="flex-grow sm:max-w-sm bg-gray-100 rounded overflow-hidden shadow-lg p-6 m-2">
+    <div className="flex-grow sm:w-1/2 md:w-1/3 lg:w-1/4 overflow-hidden shadow-lg p-6 m-2">
       <a href={repo.html_url}>{repo.name}</a>
       {repo.description && <p className="block">{repo.description}</p>}
       <span className="block">{`Langauge: ${repo.language}`}</span>

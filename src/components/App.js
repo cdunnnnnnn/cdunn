@@ -14,17 +14,19 @@ import Footer from './Footer'
 function App() {
   return (
     <>
-      <Header />
-      <main>
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Index} />
-            <Route path="/404" component={NotFound} />
-            <Route component={NotFound} />
-          </Switch>
-        </Router>
-      </main>
-      <Footer />
+      <Router>
+        <Header />
+        <main className="bg-white text-black">
+          <div className="container--wider py-32">
+            <Switch>
+              <Route exact path="/" component={Index} />
+              <Route path="/404" component={NotFound} />
+              <Route component={NotFound} />
+            </Switch>
+          </div>
+        </main>
+        <Footer />
+      </Router>
     </>
   )
 }
