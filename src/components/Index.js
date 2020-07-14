@@ -31,7 +31,7 @@ function Index() {
 
   return (
     <>
-      <h2 className="text-4xl font-black pb-6 mb-0">Recent Projects</h2>
+      <h2 className="text-4xl font-black pb-6 mb-0">Projects &amp; Work</h2>
       <div className="flex flex-col sm:flex-row flex-wrap -mx-3">
         {projects.map((project) => (
           <Project key={project._id} project={project} />

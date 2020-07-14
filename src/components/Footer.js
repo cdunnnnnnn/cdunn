@@ -8,14 +8,14 @@ function Footer() {
     <>
       <section id="contact">
         <div className="container">
-          <h2 className="text-4xl font-black pb-6 mb-0">Let's Connect</h2>
+          <h2 className="text-4xl font-black pb-6 mb-0">Contact</h2>
           <Form />
         </div>
       </section>
       <footer className="bg-white text-black text-sm">
         <div className="container py-32">
-          <ul className="vertical-middle mb-8">
-            <li className="relative inline-block w-12 h-12 rounded-full mx-1 text-github">
+          <ul className="social">
+            <li className="github">
               <a
                 href="https://github.com/cdunnnnnnn"
                 title="GitHub"
@@ -26,7 +26,7 @@ function Footer() {
                 </svg>
               </a>
             </li>
-            <li className="relative inline-block w-12 h-12 rounded-full mx-1 text-twitter">
+            <li className="twitter">
               <a
                 href="https://twitter.com/cdunnnnnnn"
                 title="Twitter"
@@ -37,7 +37,7 @@ function Footer() {
                 </svg>
               </a>
             </li>
-            <li className="relative inline-block w-12 h-12 rounded-full mx-1 text-linkedin">
+            <li className="linkedin">
               <a
                 href="https://www.linkedin.com/in/cdunnnnnnn"
                 title="LinkedIn"
@@ -48,7 +48,7 @@ function Footer() {
                 </svg>
               </a>
             </li>
-            <li className="relative inline-block w-12 h-12 rounded-full mx-1 text-dribbble">
+            <li className="dribbble">
               <a
                 href="https://dribbble.com/cdunnnnnnn"
                 title="Dribbble"
@@ -59,7 +59,7 @@ function Footer() {
                 </svg>
               </a>
             </li>
-            <li className="relative inline-block w-12 h-12 rounded-full mx-1 text-instagram">
+            <li className="instagram">
               <a
                 href="https://www.instagram.com/cdunnnnnnn"
                 title="Instagram"
@@ -73,7 +73,7 @@ function Footer() {
                 </svg>
               </a>
             </li>
-            <li className="relative inline-block w-12 h-12 rounded-full mx-1 text-spotify">
+            <li className="spotify">
               <a
                 href="http://open.spotify.com/user/pxdunn"
                 title="Spotify"

@@ -4,21 +4,47 @@ $dribbble: #ea4d89;
 $spotify: #31cd65;
 $github: #171515;
 $codepen: #000;
+$instagram: #262626;
+
+.social {
+  @apply align-middle mb-8;
+}
+
+.social > li {
+  @apply relative inline-block w-12 h-12 rounded-full mx-1;
+}
 
 .social > li > a {
-  @apply block w-full h-full bg-transparent border-solid rounded-full border-4 border-transparent transition-all duration-20 ease-in-out;
+  @apply block w-full h-full bg-transparent border-solid rounded-full transition-all duration-200 ease-in-out;
+  border-width: 3px;
+}
+
+.social > li > a > svg,
+.social > li > a > svg path {
+  @apply transition-all duration-200 ease-in-out;
 }
 
 .github {
-  a:hover {
-    border-color: #fff;
+  a {
+    border-color: $github;
   }
   svg path {
-    fill: #fff;
+    fill: $github;
+  }
+  a:hover {
+    background-color: $github;
+    border-color: $github;
+
+    svg path {
+      fill: #fff;
+    }
   }
 }
 
 .twitter {
+  a {
+    border-color: $twitter;
+  }
   svg path {
     fill: $twitter;
   }
@@ -42,11 +68,11 @@ $codepen: #000;
 
 .instagram {
   svg path {
-    fill: #fff;
+    fill: $instagram;
   }
   a {
     position: relative;
-    border-color: transparent;
+    border-color: $instagram;
     z-index: 1;
     &:before {
       content: '';
@@ -91,7 +117,6 @@ $codepen: #000;
     }
   }
   a:hover {
-    border-color: #fff;
     &:before,
     &:after {
       opacity: 1;
@@ -103,6 +128,9 @@ $codepen: #000;
 }
 
 .dribbble {
+  a {
+    border-color: $dribbble;
+  }
   svg path {
     fill: $dribbble;
   }
@@ -116,6 +144,9 @@ $codepen: #000;
 }
 
 .spotify {
+  a {
+    border-color: $spotify;
+  }
   svg path {
     fill: $spotify;
   }
@@ -129,8 +160,11 @@ $codepen: #000;
 }
 
 .linkedin {
+  a {
+    border-color: $linkedin;
+  }
   svg path {
-    fill: #fff;
+    fill: $linkedin;
   }
   a:hover {
     background-color: $linkedin;

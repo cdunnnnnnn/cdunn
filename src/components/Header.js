@@ -109,18 +109,19 @@ function Header() {
       </div>
       <div className="container--wide">
         <p className="block leading-relaxed pb-8">
-          I began my journey about 12 years ago as a UI/UX dseigner and frontend
-          developer. Since then, I've done remote fullstack work for agencies,
-          consulted for startups and collaborated with some other skilled folks
+          I started my career about 12 years ago as a UI/UX dseigner and
+          frontend developer. Since then, I've done remote fullstack work for
+          agencies, consulted for startups and collaborated with skilled folks
           to create digital products.
         </p>
         <p className="block leading-relaxed pb-8">
-          Currently, I'm avaiable and searching for new opportunities in the{' '}
-          <em>St. Pete/Tampa Bay area</em> or remote. Feel free to{' '}
+          Currently, I'm avaiable and searching for new opportunities in
+          the&nbsp;
+          <em>St. Pete/Tampa Bay area</em> or remote. Feel free to&nbsp;
           <HashLink className="font-bold hover:underline" to="/#contact">
             send me a note
           </HashLink>{' '}
-          so that we can connect. Thanks!
+          and let's connect. Thanks!
         </p>
       </div>
     </header>

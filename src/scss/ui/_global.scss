@@ -1,16 +1,11 @@
-html,
-body {
-  @apply font-sans;
+.container {
+  @apply w-full max-w-xl px-4 mx-auto;
 }
 
-.main {
-  @apply flex-1 bg-blacker text-white;
+.container--wide {
+  @apply w-full max-w-2xl px-4 mx-auto;
 }
 
-.wrapper {
-  @apply relative flex flex-col;
-
-  @screen lg {
-    @apply h-screen overflow-hidden;
-  }
+.container--wider {
+  @apply w-full max-w-4xl px-4 mx-auto;
 }
