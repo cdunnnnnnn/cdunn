@@ -27,6 +27,10 @@ function Header() {
       url: 'https://www.typescriptlang.org/',
     },
     {
+      name: 'Angular',
+      url: 'https://angular.io/',
+    },
+    {
       name: 'Sketch',
       url: 'https://www.sketch.com/',
     },
@@ -39,12 +43,24 @@ function Header() {
       url: 'https://wordpress.org/',
     },
     {
+      name: 'Sass/SCSS',
+      url: 'https://sass-lang.com/',
+    },
+    {
       name: 'Elixir',
       url: 'https://elixir-lang.org/',
     },
     {
       name: 'Phoenix',
       url: 'https://www.phoenixframework.org/',
+    },
+    {
+      name: 'MySQL',
+      url: 'https://www.mysql.com/',
+    },
+    {
+      name: 'PostgreSQL',
+      url: 'https://www.postgresql.org/',
     },
   ]
 
