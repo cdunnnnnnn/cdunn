@@ -1,0 +1,21 @@
+.timeline {
+  @apply flex flex-col relative my-16;
+
+  &::after {
+    @apply absolute h-full bg-gray;
+    left: calc(50% - 2px);
+    width: 4px;
+  }
+}
+
+.timeline__item {
+  @apply flex justify-center relative w-1/2 pr-8 my-3;
+
+  &:nth-child(odd) {
+    @apply self-start justify-start pl-8 pr-0;
+  }
+}
+
+.timeline__item-inner {
+  @apply flex flex-col items-end relative w-32 text-right rounded bg-white shadow p-4;
+}

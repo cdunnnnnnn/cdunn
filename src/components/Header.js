@@ -2,68 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
+import tags_data from '../data/tags'
+
 const avatar = 'https://s3.amazonaws.com/cdunn.io/img/avatar.jpg'
 
 function Header() {
-  const tags = [
-    {
-      name: 'React.js',
-      url: 'https://reactjs.org/',
-    },
-    {
-      name: 'Vue.js',
-      url: 'https://vuejs.org/',
-    },
-    {
-      name: 'TailwindCSS',
-      url: 'https://tailwindcss.com/',
-    },
-    {
-      name: 'Node.js',
-      url: 'https://nodejs.org/en/',
-    },
-    {
-      name: 'Typescript',
-      url: 'https://www.typescriptlang.org/',
-    },
-    {
-      name: 'Angular',
-      url: 'https://angular.io/',
-    },
-    {
-      name: 'Sketch',
-      url: 'https://www.sketch.com/',
-    },
-    {
-      name: 'PHP',
-      url: 'https://www.php.net/',
-    },
-    {
-      name: 'WordPress',
-      url: 'https://wordpress.org/',
-    },
-    {
-      name: 'Sass/SCSS',
-      url: 'https://sass-lang.com/',
-    },
-    {
-      name: 'Elixir',
-      url: 'https://elixir-lang.org/',
-    },
-    {
-      name: 'Phoenix',
-      url: 'https://www.phoenixframework.org/',
-    },
-    {
-      name: 'MySQL',
-      url: 'https://www.mysql.com/',
-    },
-    {
-      name: 'PostgreSQL',
-      url: 'https://www.postgresql.org/',
-    },
-  ]
-
   return (
     <header className="w-full bg-white text-black">
       <div className="container py-16">
@@ -89,17 +32,19 @@ function Header() {
           <div className="px-4 order-last sm:w-1/2 sm:order-first">
             <h3 className="text-lg font-bold pb-3">Things I do:</h3>
             <ul className="flex flex-wrap items-center -mx-2">
-              {tags.map((tag, index) => (
-                <li className="block px-2 pb-6" key={index}>
-                  <a
-                    className="bg-black text-white py-2 px-4 transition-all duration-200 ease-in-out hover:bg-primary"
-                    href={tag.url}
-                    target="_blank"
-                  >
-                    {tag.name}
-                  </a>
-                </li>
-              ))}
+              {tags_data.length &&
+                tags_data.map((tag, index) => (
+                  <li className="block px-2 pb-6" key={index}>
+                    <a
+                      className="bg-black text-white py-2 px-4 transition-all duration-200 ease-in-out hover:bg-primary"
+                      href={tag.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {tag.name}
+                    </a>
+                  </li>
+                ))}
             </ul>
           </div>
           <div className="px-4 sm:w-1/2">

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 // import axios from 'axios'
 
 // import API from '../utils/API'
-import Data from '../data/Data'
+import projects_data from '../data/projects'
 // import Repo from './Repo'
+// import Timeline from './Timeline'
 import Project from './Project'
 
 function Index() {
@@ -25,7 +26,7 @@ function Index() {
     // }
 
     // fetchData()
-    setProjects(Data)
+    setProjects(projects_data)
     setIsLoading(false)
   }, [projects])
 
@@ -33,7 +34,7 @@ function Index() {
     <>
       <h2 className="text-4xl font-black pb-6 mb-0">Projects &amp; Work</h2>
       <div className="flex flex-col sm:flex-row flex-wrap -mx-3">
-        {projects.map((project) => (
+        {projects.map(project => (
           <Project key={project._id} project={project} />
         ))}
       </div>

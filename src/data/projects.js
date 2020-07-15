@@ -1,4 +1,4 @@
-module.exports = Data = [
+module.exports = projects_data = [
   {
     _id: 1,
     name: 'Avocado Green Mattress',

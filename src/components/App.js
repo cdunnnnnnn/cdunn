@@ -20,7 +20,6 @@ function App() {
           <div className="container--wider py-32">
             <Switch>
               <Route exact path="/" component={Index} />
-              <Route path="/404" component={NotFound} />
               <Route component={NotFound} />
             </Switch>
           </div>
