@@ -12,6 +12,14 @@ module.exports = tags_data = [
     url: 'https://tailwindcss.com/',
   },
   {
+    name: 'Gatsby',
+    url: 'https://www.gatsbyjs.org/',
+  },
+  {
+    name: 'Next.js',
+    url: 'https://nextjs.org/',
+  },
+  {
     name: 'Node.js',
     url: 'https://nodejs.org/en/',
   },
