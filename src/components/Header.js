@@ -2,9 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
+import ProgressiveImage from './ProgressiveImage'
+
 import tags_data from '../data/tags'
 
-const avatar = 'https://s3.amazonaws.com/cdunn.io/img/avatar.jpg'
+const avatar = {
+  alt: 'Chris Dunn | ui desginer &amp; developer in St. Pete, FL',
+  src: 'https://s3.amazonaws.com/cdunn.io/img/avatar.jpg',
+}
 
 function Header() {
   return (
@@ -22,7 +27,7 @@ function Header() {
           <h1 className="font-black text-5xl">
             Hi, my name is Chris.
             <small className="block font-bold text-3xl">
-              I design &amp; build digital products.
+              I design &amp; code digital products.
             </small>
           </h1>
         </section>
@@ -48,7 +53,9 @@ function Header() {
             </ul>
           </div>
           <div className="px-4 sm:w-1/2">
-            <img className="mb-3" src={avatar} alt="Chris Dunn" />
+            <div className="mb-3">
+              <ProgressiveImage image={avatar} />
+            </div>
           </div>
         </section>
       </div>
