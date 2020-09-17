@@ -1,5 +1,9 @@
 module.exports = tags_data = [
   {
+    name: 'Jamstack',
+    url: 'https://jamstack.org/',
+  },
+  {
     name: 'React.js',
     url: 'https://reactjs.org/',
   },

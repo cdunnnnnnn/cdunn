@@ -17,7 +17,7 @@ module.exports = {
         instagram: '#262626',
       },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
       },
       inset: {
         '1/2': '50%',

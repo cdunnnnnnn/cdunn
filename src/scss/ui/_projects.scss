@@ -50,6 +50,7 @@
 
 .project__title {
   @apply absolute bottom-0 bg-white text-black text-xl font-bold py-2 px-4 transition-all duration-200 ease-in-out;
+  max-width: 75%;
   z-index: 10;
 }
 
