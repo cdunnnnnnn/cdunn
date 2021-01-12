@@ -8,17 +8,18 @@ module.exports = tags_data = [
     url: 'https://reactjs.org/',
   },
   {
-    name: 'Vue.js',
-    url: 'https://vuejs.org/',
+    name: 'Gatsby',
+    url: 'https://www.gatsbyjs.org/',
   },
   {
     name: 'TailwindCSS',
     url: 'https://tailwindcss.com/',
   },
   {
-    name: 'Gatsby',
-    url: 'https://www.gatsbyjs.org/',
+    name: 'Vue.js',
+    url: 'https://vuejs.org/',
   },
+
   {
     name: 'Next.js',
     url: 'https://nextjs.org/',
@@ -32,8 +33,8 @@ module.exports = tags_data = [
     url: 'https://www.typescriptlang.org/',
   },
   {
-    name: 'Angular',
-    url: 'https://angular.io/',
+    name: 'Figma',
+    url: 'https://www.figma.com/',
   },
   {
     name: 'Sketch',

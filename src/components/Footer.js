@@ -1,18 +1,20 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react"
+import { Link } from "react-router-dom"
 
-import Form from './Form'
+import Form from "./Form"
 
 function Footer() {
   return (
     <>
       <section id="contact">
         <div className="container">
-          <h2 className="text-4xl font-black pb-6 mb-0">Contact</h2>
+          <h2 className="pb-6 mb-0 text-4xl font-black tracking-wide">
+            Contact
+          </h2>
           <Form />
         </div>
       </section>
-      <footer className="bg-white text-black text-sm">
+      <footer className="text-sm text-black bg-white">
         <div className="container py-32">
           <ul className="social">
             <li className="github">
@@ -88,7 +90,7 @@ function Footer() {
           <ul className="mb-8">
             <li>
               <Link
-                className="block w-16 h-16 bg-black rounded-full p-2"
+                className="block w-16 h-16 p-2 bg-black rounded-full"
                 to={`/`}
               >
                 <svg viewBox="172 -172 400 400">
@@ -120,7 +122,7 @@ function Footer() {
               </a>
             </li>
             <li className="block">
-              copyright {new Date().getFullYear()}{' '}
+              copyright {new Date().getFullYear()}{" "}
               <a
                 className="font-bold hover:underline"
                 href="https://github.com/cdunnnnnnn"

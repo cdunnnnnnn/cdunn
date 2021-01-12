@@ -1,21 +1,55 @@
 .timeline {
-  @apply flex flex-col relative my-16;
+  @apply w-full flex flex-col relative mx-auto;
+  max-width: 85%;
 
-  &::after {
-    @apply absolute h-full bg-gray;
-    left: calc(50% - 2px);
-    width: 4px;
+  @screen md {
+    max-width: 100%;
   }
 }
 
 .timeline__item {
-  @apply flex justify-center relative w-1/2 pr-8 my-3;
+  @apply text-sm leading-relaxed m-0 p-12 relative;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #743ad5 0%, #00b1d4 100%);
+  border-image-slice: 1;
+  // border-width: 3px;
 
   &:nth-child(odd) {
-    @apply self-start justify-start pl-8 pr-0;
+    @apply pl-0;
+    border-right: 3px solid;
+
+    .timeline__item-year {
+      left: 100%;
+      margin-left: -25px;
+    }
+  }
+
+  &:nth-child(even) {
+    @apply pr-0;
+    border-left: 3px solid;
+
+    .timeline__item-year {
+      right: 100%;
+      margin-right: -25px;
+    }
+  }
+
+  &:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
 
-.timeline__item-inner {
-  @apply flex flex-col items-end relative w-32 text-right rounded bg-white shadow p-4;
+.timeline__item-year {
+  @apply absolute px-3 py-1 bg-black text-center text-white;
+}
+
+.timeline__item-title {
+  @apply text-lg font-bold tracking-wide;
 }

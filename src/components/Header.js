@@ -1,21 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link'
+import React from "react"
+import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
-import ProgressiveImage from './ProgressiveImage'
+import ProgressiveImage from "./ProgressiveImage"
 
-import tags_data from '../data/tags'
+import tags_data from "../data/tags"
+
+import avatar_src from "../img/avatar.jpg"
 
 const avatar = {
-  alt: 'Chris Dunn | ui desginer &amp; developer in St. Pete, FL',
-  src: 'https://s3.amazonaws.com/cdunn.io/img/avatar.jpg',
+  alt: "Chris Dunn | ui desginer &amp; developer in St. Pete, FL",
+  src: avatar_src,
+  // src: "https://s3.amazonaws.com/cdunn.io/img/avatar.jpg",
 }
 
 function Header() {
+  const getStartYear = (date) => {
+    const startDate = new Date(date)
+    return new Date().getFullYear() - startDate.getFullYear()
+  }
+
   return (
-    <header className="w-full bg-white text-black">
+    <header className="w-full text-black bg-white">
       <div className="container py-16">
-        <Link className="block w-16 h-16 bg-black rounded-full p-2" to={`/`}>
+        <Link className="block w-16 h-16 p-2 bg-black rounded-full" to={`/`}>
           <svg viewBox="172 -172 400 400">
             <path
               fill="#fafafa"
@@ -24,24 +32,24 @@ function Header() {
           </svg>
         </Link>
         <section className="block py-24">
-          <h1 className="font-black text-5xl">
+          <h1 className="text-5xl font-black tracking-wide">
             Hi, my name is Chris.
-            <small className="block font-bold text-3xl">
+            <small className="block text-3xl font-bold">
               I design &amp; code digital products.
             </small>
           </h1>
         </section>
       </div>
-      <div className="container--wide pb-16">
-        <section className="flex flex-col sm:flex-row flex-no-wrap items-center justify-center -mx-4">
-          <div className="px-4 order-last sm:w-1/2 sm:order-first">
-            <h3 className="text-lg font-bold pb-3">Things I do:</h3>
+      <div className="pb-16 container--wide">
+        <section className="flex flex-col flex-no-wrap items-center justify-center -mx-4 sm:flex-row">
+          <div className="order-last px-4 sm:w-1/2 sm:order-first">
+            <h3 className="pb-3 text-lg font-bold">Things I do:</h3>
             <ul className="flex flex-wrap items-center -mx-2">
               {tags_data.length &&
                 tags_data.map((tag, index) => (
                   <li className="block px-2 pb-6" key={index}>
                     <a
-                      className="bg-black text-white py-2 px-4 transition-all duration-200 ease-in-out hover:bg-primary"
+                      className="px-4 py-2 text-white transition-all duration-200 ease-in-out bg-black hover:bg-primary"
                       href={tag.url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -60,19 +68,19 @@ function Header() {
         </section>
       </div>
       <div className="container--wide">
-        <p className="block leading-relaxed pb-8">
-          I started my career about 12 years ago as a UI/UX dseigner and
-          frontend developer. Since then, I've done remote fullstack work for
-          agencies, consulted for startups and collaborated with skilled folks
-          to create digital products.
+        <p className="block pb-8 leading-relaxed">
+          I started my career about {getStartYear("01/01/2008")} years ago as a
+          UI/UX designer and frontend developer. Since then, I've done remote
+          frontend and fullstack work for agencies, consulted for startups and
+          collaborated with skilled folks to create digital products.
         </p>
-        <p className="block leading-relaxed pb-8">
+        <p className="block pb-8 leading-relaxed">
           Currently, I'm avaiable and searching for new opportunities in
           the&nbsp;
           <em>St. Pete/Tampa Bay area</em> or remote. Feel free to&nbsp;
           <HashLink className="font-bold hover:underline" to="/#contact">
             send me a note
-          </HashLink>{' '}
+          </HashLink>{" "}
           and let's connect. Thanks!
         </p>
       </div>

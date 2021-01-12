@@ -1,28 +1,20 @@
 module.exports = timeline_data = [
   {
-    text: 'Wrote my first blog post ever on Medium',
-    date: 'March 03 2017',
-    category: {
-      tag: 'medium',
-      color: '#018f69',
-    },
-    link: {
-      url:
-        'https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2',
-      text: 'Read more',
-    },
+    title: "Crain Communications",
+    text:
+      "fullstack development across multiple publications/products with the CE1 scrum/agile shared services team",
+    year: "2013",
   },
   {
-    text: 'Wrote my first blog post ever on Medium',
-    date: 'March 03 2017',
-    category: {
-      tag: 'medium',
-      color: '#018f69',
-    },
-    link: {
-      url:
-        'https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2',
-      text: 'Read more',
-    },
+    title: "Avocado Green Mattress",
+    text:
+      "fullstack development on the Avo engineering team with Elixir/Phoenix and React",
+    year: "2017",
+  },
+  {
+    title: "MANSCAPED",
+    text:
+      "senior frontend developer role on the MANSCAPED team with Gatsby and React",
+    year: "2020",
   },
 ]

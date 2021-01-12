@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react"
 // import axios from 'axios'
 
 // import API from '../utils/API'
-import projects_data from '../data/projects'
+import projects_data from "../data/projects"
 // import Repo from './Repo'
-// import Timeline from './Timeline'
-import Project from './Project'
+import Timeline from "./Timeline"
+// import Project from "./Project"
 
 function Index() {
   const [projects, setProjects] = useState([])
@@ -32,12 +32,15 @@ function Index() {
 
   return (
     <>
-      <h2 className="text-4xl font-black pb-6 mb-0">Projects &amp; Work</h2>
-      <div className="flex flex-col sm:flex-row flex-wrap -mx-3">
+      <h2 className="pb-6 mb-0 text-4xl font-black tracking-wide">
+        Experience
+      </h2>
+      <Timeline />
+      {/*<div className="flex flex-col flex-wrap -mx-3 sm:flex-row">
         {projects.map(project => (
           <Project key={project._id} project={project} />
         ))}
-      </div>
+      </div>*/}
     </>
   )
 }
