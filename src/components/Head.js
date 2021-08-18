@@ -84,6 +84,11 @@ function Head() {
       <link rel="shortcut icon" href={Icon57x57} />
       {/* Chrome Add to Homescreen */}
       <link rel="shortcut icon" sizes="196x196" href={Icon196x196} />
+      {/* Google site verification */}
+      <meta
+        name="google-site-verification"
+        content="hr8RREdoxj-teDHYrF4o5MM11QChIW0RGwKXX-SJz4g"
+      />
     </Helmet>
   )
 }
